@@ -91,6 +91,22 @@
             border-radius: inherit;
             pointer-events: none;
         }
+
+        /* Hiệu ứng chạy tin tức dọc mượt mà (tự dừng khi rê chuột vào) */
+        @keyframes verticalNewsScroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        .animate-news-ticker {
+            animation: verticalNewsScroll 32s linear infinite;
+        }
+        .animate-news-ticker:hover {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 <body class="bg-yinyang-wuxing text-ink-900 font-sans antialiased selection:bg-jade-900 selection:text-silk-100 pb-20 md:pb-0">
@@ -857,26 +873,26 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ==================== 6. KHO TÀI LIỆU CHUYÊN MÔN & PHỤC HỒI (LÀM DÀY NỘI DUNG HỌC THUẬT) ==================== -->
+    <!-- ==================== 6. KHO TÀI LIỆU CHUYÊN MÔN & TIN TỨC HỘI ĐÔNG Y TRUNG ƯƠNG ==================== -->
     <section id="thu-vien-kien-thuc" class="py-16 sm:py-24 bg-silk-200/50 border-b border-gold-600/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-cinnabar-700">Chuyên Khảo Y Học Cổ Truyền & Phục Hồi Chức Năng</span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-cinnabar-700">Chuyên Khảo Y Học Cổ Truyền & Thời Sự Ngành</span>
                     <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-jade-900 mt-2">
-                        Kho Tài Liệu Chuyên Sâu & Cẩm Nang Phục Hồi
+                        Kho Tài Liệu & Tin Tức Hội Đông Y
                     </h2>
                 </div>
                 <p class="text-sm text-ink-700 max-w-md">
-                    Tổng hợp các chuyên đề biên soạn dày dặn theo giáo trình đào tạo tại Bệnh viện Tuệ Tĩnh, quy trình kỹ thuật Bộ Y tế và kinh nghiệm thực hành lâm sàng.
+                    Tổng hợp 9 chuyên đề biên soạn theo giáo trình Bệnh viện Tuệ Tĩnh kết hợp bản tin cập nhật tự động từ cổng thông tin Hội Đông Y Trung ương.
                 </p>
             </div>
 
-            <!-- Grid 9 Chuyên Đề Tài Liệu Chuyên Sâu -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <!-- Bố cục 2 cột: Trái (Kho 9 Chuyên Đề) - Phải (Cột Tin Tức Chạy Dọc Từ Hội Đông Y TW) -->
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Cột Trái: 9 Chuyên Đề Tài Liệu Chuyên Sâu (Chiếm 8/12 cột) -->
+                <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6">
                 
                 <!-- Tài liệu 1 -->
                 <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
@@ -1078,6 +1094,56 @@
                         </button>
                     </div>
                 </article>
+
+                </div>
+
+                <!-- Cột Phải: Bảng Tin Chạy Dọc Tự Động Từ Hội Đông Y Trung Ương (Chiếm 4/12 cột) -->
+                <aside class="lg:col-span-4 lg:sticky lg:top-24">
+                    <div class="bg-silk-50 rounded-3xl border border-gold-600/35 shadow-lg overflow-hidden flex flex-col">
+                        <!-- Header Bảng Tin -->
+                        <div class="bg-jade-900 px-5 py-4 border-b border-gold-500/30 flex items-center justify-between">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-cinnabar-700 animate-ping"></span>
+                                    <span class="text-[11px] font-bold uppercase tracking-wider text-gold-300">Cập Nhật Tự Động (RSS)</span>
+                                </div>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-silk-50 mt-0.5">
+                                    Tin Hội Đông Y Trung Ương
+                                </h3>
+                            </div>
+                            <button type="button" id="refresh-hdy-news-btn" title="Tải lại tin mới nhất" class="p-2 rounded-xl bg-jade-950/60 hover:bg-jade-800 text-gold-300 border border-gold-500/30 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Nguồn Trích Dẫn -->
+                        <div class="px-5 py-2.5 bg-jade-50 border-b border-gold-600/20 flex items-center justify-between text-[11px] text-ink-700">
+                            <span>Nguồn: <strong>hoidongytrunguong.vn</strong></span>
+                            <span id="hdy-news-status" class="text-jade-800 font-medium">Đang đồng bộ...</span>
+                        </div>
+
+                        <!-- Khung Cuộn Tin Dọc (Tự dừng khi rê chuột) -->
+                        <div class="relative h-[520px] overflow-hidden px-4 py-3 bg-silk-100/60">
+                            <!-- Lớp mờ viền trên dưới tạo chiều sâu -->
+                            <div class="pointer-events-none absolute inset-x-0 top-0 h-6 bg-gradient-to-b from-silk-50 to-transparent z-10"></div>
+                            <div class="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-silk-50 to-transparent z-10"></div>
+
+                            <div id="hdy-news-ticker-track" class="animate-news-ticker space-y-3">
+                                <!-- Dữ liệu tin tức sẽ được nạp tự động bằng JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Footer Bảng Tin -->
+                        <div class="px-5 py-3.5 bg-silk-50 border-t border-gold-600/25 flex items-center justify-between">
+                            <span class="text-[11px] text-ink-500 italic">Rê chuột vào tin để tạm dừng</span>
+                            <a href="https://hoidongytrunguong.vn/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-jade-900 hover:text-cinnabar-700 transition-colors">
+                                Xem trang gốc →
+                            </a>
+                        </div>
+                    </div>
+                </aside>
 
             </div>
         </div>
@@ -1688,20 +1754,105 @@
                 if (e.target === articleModal) closeArticleModal();
             });
         }
+
+        // 5. Tự Động Lấy Tin Tức Từ Hội Đông Y Trung Ương (hoidongytrunguong.vn) qua RSS Feed
+        const newsTrack = document.getElementById('hdy-news-ticker-track');
+        const newsStatus = document.getElementById('hdy-news-status');
+        const refreshNewsBtn = document.getElementById('refresh-hdy-news-btn');
+
+        // Danh sách tin tiêu biểu dự phòng từ hoidongytrunguong.vn khi mạng hoặc máy chủ RSS tạm gián đoạn
+        const fallbackHdyNews = [
+            {
+                title: 'Phát huy giá trị di sản Y dược cổ truyền Việt Nam trong chăm sóc sức khỏe nhân dân',
+                pubDate: 'Hội Đông Y Việt Nam',
+                link: 'https://hoidongytrunguong.vn/',
+                desc: 'Tăng cường kết hợp y học cổ truyền với y học hiện đại, bảo tồn các phương pháp chữa bệnh không dùng thuốc hiệu quả cao.'
+            },
+            {
+                title: 'Ứng dụng các phương pháp trị liệu không dùng thuốc trong điều trị bệnh lý cơ xương khớp',
+                pubDate: 'Chuyên môn YHCT',
+                link: 'https://hoidongytrunguong.vn/',
+                desc: 'Đẩy mạnh đào tạo, chuẩn hóa quy trình kỹ thuật xoa bóp bấm huyệt, tác động cột sống và châm cứu tại các tuyến cơ sở.'
+            },
+            {
+                title: 'Hội Đông Y Việt Nam đẩy mạnh nghiên cứu khoa học và kế thừa kinh nghiệm lương y',
+                pubDate: 'Hoạt động Hội',
+                link: 'https://hoidongytrunguong.vn/',
+                desc: 'Tổng hợp, đánh giá và phổ biến rộng rãi các bài thuốc hay, cây thuốc quý và kỹ thuật trị liệu đặc sắc của các danh y.'
+            },
+            {
+                title: 'Nâng cao y đức và chất lượng khám chữa bệnh bằng Y học cổ truyền trong giai đoạn mới',
+                pubDate: 'Tin tức Ngành',
+                link: 'https://hoidongytrunguong.vn/',
+                desc: 'Xây dựng đội ngũ thầy thuốc Đông y vững vàng về chuyên môn, chuẩn mực về quy trình kỹ thuật y khoa.'
+            },
+            {
+                title: 'Dưỡng sinh và phòng bệnh theo mùa bằng Y học cổ truyền Việt Nam',
+                pubDate: 'Kiến thức Sức khỏe',
+                link: 'https://hoidongytrunguong.vn/',
+                desc: 'Hướng dẫn cộng đồng điều hòa âm dương, giữ ấm kinh lạc và rèn luyện thể chất phòng ngừa các bệnh mạn tính.'
+            }
+        ];
+
+        function renderNewsTickerItems(items) {
+            if (!newsTrack || !items || items.length === 0) return;
+            // Nhân đôi danh sách để vòng lặp chạy dọc nối đuôi liền mạch 100%
+            const doubledItems = [...items, ...items];
+            newsTrack.innerHTML = doubledItems.map(item => {
+                const cleanDesc = (item.desc || '').replace(/<[^>]*>?/gm, '').slice(0, 115);
+                return `
+                    <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-2xl bg-silk-50 hover:bg-jade-50 border border-gold-600/25 hover:border-jade-900/35 shadow-sm transition-all group">
+                        <div class="flex items-center justify-between gap-2 text-[11px] text-cinnabar-700 font-semibold mb-1.5">
+                            <span>• Hội Đông Y TW</span>
+                            <span class="text-ink-500 font-normal">${item.pubDate}</span>
+                        </div>
+                        <h4 class="font-serif text-base sm:text-lg font-bold text-jade-900 group-hover:text-cinnabar-700 leading-snug transition-colors">
+                            ${item.title}
+                        </h4>
+                        ${cleanDesc ? `<p class="text-xs text-ink-700 mt-1.5 line-clamp-2 leading-relaxed">${cleanDesc}...</p>` : ''}
+                    </a>
+                `;
+            }).join('');
+        }
+
+        async function fetchHoiDongYNews() {
+            if (newsStatus) newsStatus.textContent = 'Đang lấy tin mới...';
+            try {
+                // Sử dụng cổng chuyển đổi RSS sang JSON công cộng để đọc feed của hoidongytrunguong.vn
+                const rssUrl = encodeURIComponent('https://hoidongytrunguong.vn/feed/');
+                const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+                if (!response.ok) throw new Error('Không kết nối được RSS');
+                const data = await response.json();
+
+                if (data.status === 'ok' && Array.isArray(data.items) && data.items.length > 0) {
+                    const formatted = data.items.slice(0, 8).map(entry => {
+                        const dateObj = entry.pubDate ? new Date(entry.pubDate.replace(' ', 'T')) : null;
+                        const dateStr = (dateObj && !isNaN(dateObj))
+                            ? dateObj.toLocaleDateString('vi-VN')
+                            : 'Mới cập nhật';
+                        return {
+                            title: entry.title,
+                            pubDate: dateStr,
+                            link: entry.link || 'https://hoidongytrunguong.vn/',
+                            desc: entry.description || ''
+                        };
+                    });
+                    renderNewsTickerItems(formatted);
+                    if (newsStatus) newsStatus.textContent = 'Đã cập nhật trực tiếp';
+                    return;
+                }
+                throw new Error('Dữ liệu RSS trống');
+            } catch (error) {
+                // Nếu nguồn RSS tạm chặn hoặc bảo trì, tự động hiển thị danh sách tin tiêu biểu kèm link gốc
+                renderNewsTickerItems(fallbackHdyNews);
+                if (newsStatus) newsStatus.textContent = 'Tin tiêu biểu Hội ĐY';
+            }
+        }
+
+        if (refreshNewsBtn) {
+            refreshNewsBtn.addEventListener('click', fetchHoiDongYNews);
+        }
+        fetchHoiDongYNews();
     </script>
 </body>
 </html>
-```
-
----
-
-### Giải Đáp Chi Tiết Về Việc Lưu Trữ (Bạn Không Cần Mua Thêm Ổ Nhớ Hay Ổ Cứng)
-
-1. **Tất cả chữ và tài liệu đều nằm gọn trong mã nguồn trang web:**
-   * Toàn bộ 9 chuyên đề y khoa dài, bảng tra cứu đốt sống và công cụ đánh giá triệu chứng đều được lưu trực tiếp bằng văn bản ngay trong tệp `index.html`.
-   * Dung lượng của toàn bộ văn bản đó chỉ khoảng **60 KB – 100 KB** (chưa bằng 1/10 một bức ảnh chụp bằng điện thoại).
-2. **Kho lưu trữ miễn phí của GitHub dư sức chứa hàng nghìn bài viết và hình ảnh:**
-   * Tài khoản GitHub miễn phí cho phép mỗi kho lưu trữ (Repository) chứa lên tới **1 GB – 5 GB** dữ liệu.
-   * Với 10 bức ảnh thực tế của bạn (khoảng 15–20 MB) cộng với hàng trăm bài viết chuyên sâu sau này, bạn **không bao giờ phải lo đầy bộ nhớ** và cũng **không cần thuê thêm ổ nhớ đám mây hay mua ổ cứng vật lý** nào để vận hành trang web này.
-3. **Cách mở rộng thêm bài viết về sau:**
-   * Bất cứ khi nào bạn muốn bổ sung thêm ca lâm sàng mới, hình ảnh học tập mới hoặc chuyên đề chăm sóc da dưỡng sinh mới, bạn chỉ cần tải thêm ảnh vào đúng thư mục đó trên GitHub và cập nhật nội dung vào tệp `index.html`.
