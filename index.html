@@ -3,325 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chăm sóc sức khỏe bằng tác động cột sống - Phương pháp chữa bệnh không dùng thuốc, không xâm lấn của Lương Y Nguyễn Tham Tán">
-    <meta name="keywords" content="tác động cột sống, chữa bệnh không dùng thuốc, đông y, chăm sóc sức khỏe, Hà Nội">
-    <meta name="author" content="Trung Tâm Chăm Sóc Sức Khỏe Tác Động Cột Sống">
+    <title>Tác Động Cột Sống YHCT Việt Nam | Di Sản Cố Lương Y Nguyễn Tham Tán</title>
+    <meta name="description" content="Phương pháp Tác Động Cột Sống Y Học Cổ Truyền Việt Nam - Chữa bệnh không dùng thuốc, giữ trọn tinh hoa di sản Cố Lương Y Nguyễn Tham Tán tại Phúc Thịnh, Hà Nội.">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com">
-    <meta property="og:title" content="Chăm Sóc Sức Khỏe Bằng Tác Động Cột Sống">
-    <meta property="og:description" content="Phương pháp chữa bệnh không dùng thuốc, không xâm lấn. Kỹ thuật tinh tế của Lương Y Nguyễn Tham Tán">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Chăm Sóc Sức Khỏe Bằng Tác Động Cột Sống">
-    <meta property="twitter:description" content="Phương pháp chữa bệnh không dùng thuốc, không xâm lấn">
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://yourdomain.com">
-    
-    <!-- Preload critical resources -->
+    <!-- Google Fonts: Cormorant Garamond (Serif sang trọng đậm chất Á Đông) & Be Vietnam Pro (Sans-serif chuẩn tiếng Việt) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
     
-    <title>Chăm Sóc Sức Khỏe Bằng Tác Động Cột Sống | Nguyễn Tham Tán</title>
-    
-    <!-- Tailwind CSS CDN with optimization -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    colors: {
+                        jade: {
+                            950: '#0D261C',
+                            900: '#1B4332',
+                            800: '#24553F',
+                            700: '#2D6A4F',
+                            600: '#40916C',
+                            100: '#E6F0EC',
+                            50: '#F2F7F5'
+                        },
+                        amber: {
+                            700: '#9A6B26',
+                            600: '#B58338',
+                            500: '#C9984A',
+                            400: '#D4A373',
+                            100: '#F9F1E4',
+                            50: '#FCF8F2'
+                        },
+                        parchment: {
+                            50: '#FDFBF7',
+                            100: '#FAF7F2',
+                            200: '#F3EDE2',
+                            300: '#E6DEC8'
+                        },
+                        ink: {
+                            900: '#1F2421',
+                            700: '#3D4440',
+                            500: '#646E68'
+                        }
+                    },
                     fontFamily: {
-                        sans: ["Plus Jakarta Sans", "sans-serif"],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif']
+                    },
+                    backgroundImage: {
+                        'eastern-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23B58338' stroke-opacity='0.09' stroke-width='1'%3E%3Cpath d='M30 0c16.569 0 30 13.431 30 30 0 16.569-13.431 30-30 30C13.431 60 0 46.569 0 30 0 13.431 13.431 0 30 0zm0 8C17.85 8 8 17.85 8 30s9.85 22 22 22 22-9.85 22-22S42.15 8 30 8zm0 10c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Google Analytics (thay YOUR_TRACKING_ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR_TRACKING_ID');
-    </script>
-    
-    <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
-      "name": "Trung Tâm Chăm Sóc Sức Khỏe Tác Động Cột Sống",
-      "url": "https://yourdomain.com",
-      "description": "Chăm sóc sức khỏe bằng tác động cột sống - Phương pháp chữa bệnh không dùng thuốc",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Thôn Đoài, Phúc Thịnh",
-        "addressLocality": "Hà Nội",
-        "addressCountry": "VN"
-      },
-      "telephone": "0898765865",
-      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200",
-      "medicalSpecialty": "Chiropractic",
-      "areaServed": "VN",
-      "founder": "Nguyễn Tham Tán",
-      "sameAs": []
-    }
-    </script>
-    
     <style>
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            scroll-behavior: smooth;
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        
-        /* Lazy loading placeholder */
-        img[loading="lazy"] {
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
+        ::-webkit-scrollbar-track {
+            background: #FAF7F2;
         }
-        
-        @keyframes loading {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+        ::-webkit-scrollbar-thumb {
+            background: #B58338;
+            border-radius: 9999px;
         }
-        
-        /* Performance: reduce animations on slow devices */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation: none !important;
-                transition: none !important;
-            }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1B4332;
         }
-        
-        /* Optimize CLS */
-        .aspect-video {
-            aspect-ratio: 16 / 9;
+
+        /* Hiệu ứng viền khung tranh Á Đông */
+        .eastern-frame {
+            position: relative;
+        }
+        .eastern-frame::before {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            border: 1px solid rgba(181, 131, 56, 0.25);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        /* Animation nhẹ nhàng cho vòng tròn Âm Dương / Khí huyết */
+        @keyframes pulseSlow {
+            0%, 100% { transform: scale(1); opacity: 0.85; }
+            50% { transform: scale(1.04); opacity: 1; }
+        }
+        .animate-breath {
+            animation: pulseSlow 6s ease-in-out infinite;
+        }
+
+        /* SVG Spine Interactive Hover */
+        .spine-zone {
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .spine-zone:hover .vertebra-node {
+            fill: #B58338;
+            transform: scale(1.08);
+        }
+        .spine-zone.active .vertebra-node {
+            fill: #1B4332;
+            stroke: #B58338;
+            stroke-width: 2.5px;
+        }
+        .spine-zone.active .zone-badge {
+            fill: #1B4332;
+        }
+        .spine-zone.active .zone-badge-text {
+            fill: #FAF7F2;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-parchment-100 text-ink-900 font-sans antialiased selection:bg-jade-900 selection:text-parchment-100 pb-20 md:pb-0">
 
-    <!-- NAVIGATION -->
-    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm" role="navigation">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 no-underline focus:outline-none focus:ring-2 focus:ring-emerald-800 rounded-lg">
-                <div class="bg-emerald-800 text-white p-2.5 rounded-xl font-bold text-xl flex items-center justify-center shadow-md shadow-emerald-800/20">
-                    <i data-lucide="activity" class="w-6 h-6"></i>
-                </div>
-                <div>
-                    <span class="text-lg font-bold tracking-tight text-slate-900 block leading-tight">TÁC ĐỘNG CỘT SỐNG</span>
-                    <span class="text-xs text-emerald-800 font-medium tracking-wide uppercase">Di sản Lương Y Nguyễn Tham Tán</span>
-                </div>
-            </a>
-            
-            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
-                <a href="#tong-quan" class="hover:text-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-800 rounded">Tổng Quan</a>
-                <a href="#anh-huong-chuc-nang" class="hover:text-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-800 rounded">Sơ Đồ Chức Năng</a>
-                <a href="#di-san-khoa-hoc" class="hover:text-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-800 rounded">Phương Pháp</a>
-                <a href="#quy-trinh" class="hover:text-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-800 rounded">4 Đặc Trưng</a>
-            </div>
-
-            <a href="#dat-lich" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-emerald-800 hover:bg-emerald-900 rounded-xl transition-all shadow-md shadow-emerald-800/20 focus:outline-none focus:ring-2 focus:ring-emerald-800">
-                Đặt Lịch Khám & Tầm Soát
-            </a>
-        </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section id="tong-quan" class="pt-32 pb-20 md:pt-36 md:pb-24 overflow-hidden relative">
+    <!-- ==================== 1. HEADER & NAVIGATION ==================== -->
+    <header id="navbar" class="sticky top-0 z-40 bg-parchment-100/95 backdrop-blur-md border-b border-amber-600/20 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-semibold uppercase tracking-wider">
-                        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-700"></i>
-                        Trị Liệu Tự Nhiên • Không Xâm Lấn • Không Dùng Thuốc
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <!-- Biểu tượng Ấn Triện & Cột Sống Cân Bằng -->
+                    <div class="w-11 h-11 rounded-xl bg-jade-900 flex items-center justify-center shadow-md border border-amber-500/40 group-hover:bg-jade-800 transition-colors">
+                        <svg class="w-7 h-7 text-amber-400" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18" r="15.5" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2"/>
+                            <path d="M18 5C18 9 15.5 11.5 18 15C20.5 18.5 15.5 21.5 18 25C20.5 28.5 18 31 18 31" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="18" cy="9.5" r="2" fill="currentColor"/>
+                            <circle cx="18" cy="15" r="2.3" fill="#FAF7F2"/>
+                            <circle cx="18" cy="20.5" r="2.3" fill="currentColor"/>
+                            <circle cx="18" cy="26" r="2" fill="#FAF7F2"/>
+                        </svg>
                     </div>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.2] tracking-tight">
-                        Chăm sóc sức khỏe từ gốc với di sản <span class="text-emerald-800">Tác Động Cột Sống</span>
+                    <div>
+                        <span class="block font-serif font-bold text-lg sm:text-xl tracking-wide text-jade-900 leading-tight">
+                            TÁC ĐỘNG CỘT SỐNG
+                        </span>
+                        <span class="block text-[11px] sm:text-xs font-medium tracking-widest uppercase text-amber-700">
+                            YHCT Việt Nam • Di Sản Nguyễn Tham Tán
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink-700">
+                    <a href="#di-san" class="hover:text-jade-900 transition-colors py-2">Di Sản & 4 Đặc Trưng</a>
+                    <a href="#ban-do-cot-song" class="hover:text-jade-900 transition-colors py-2">Tra Cứu Đốt Sống</a>
+                    <a href="#danh-gia-online" class="hover:text-jade-900 transition-colors py-2 flex items-center gap-1.5">
+                        <span>Đánh Giá Triệu Chứng</span>
+                        <span class="px-1.5 py-0.5 text-[10px] font-semibold bg-amber-600/15 text-amber-700 rounded-full">Mới</span>
+                    </a>
+                    <a href="#kien-thuc" class="hover:text-jade-900 transition-colors py-2">Kiến Thức & Hồi Phục</a>
+                    <a href="#lien-he" class="hover:text-jade-900 transition-colors py-2">Phòng Khám</a>
+                </nav>
+
+                <!-- CTA Button & Mobile Menu Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="#dat-lich" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-jade-900 hover:bg-jade-800 text-parchment-50 text-sm font-medium shadow-sm hover:shadow transition-all border border-amber-500/30">
+                        <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        <span>Đặt Lịch Tư Vấn</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" aria-label="Mở menu" class="lg:hidden p-2.5 rounded-xl text-jade-900 hover:bg-parchment-200 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-parchment-50 border-b border-amber-600/20 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="#di-san" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-ink-900 hover:bg-parchment-200">Di Sản & 4 Đặc Trưng Cốt Lõi</a>
+            <a href="#ban-do-cot-song" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-ink-900 hover:bg-parchment-200">Bản Đồ Tra Cứu Đốt Sống</a>
+            <a href="#danh-gia-online" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-jade-900 bg-jade-50">Tự Đánh Giá Sức Khỏe Online</a>
+            <a href="#kien-thuc" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-ink-900 hover:bg-parchment-200">Góc Kiến Thức & Câu Chuyện Hồi Phục</a>
+            <a href="#dat-lich" class="mobile-link block text-center mt-3 px-4 py-3 rounded-xl bg-jade-900 text-parchment-50 font-medium">Đặt Lịch Khám Với Lương Y</a>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="relative overflow-hidden bg-eastern-pattern pt-10 pb-16 sm:pt-16 sm:pb-24 border-b border-amber-600/20">
+        <!-- Decorative Radial Glow -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-jade-700/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Content (7 cols) -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <!-- Badge Di Sản -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-600/30 text-amber-700 text-xs sm:text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                        <span>TINH HOA Y HỌC CỔ TRUYỀN VIỆT NAM • KHÔNG DÙNG THUỐC</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.4rem] font-bold text-jade-900 leading-[1.15]">
+                        Khơi Thông <span class="text-amber-600 italic">Trục Cột Sống</span>,<br class="hidden sm:inline"> Đánh Thức Khả Năng Tự Chữa Lành
                     </h1>
-                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-                        Thừa kế phương pháp chữa bệnh độc đáo của Cố Lương Y Nguyễn Tham Tán, kết hợp chuẩn hóa Y học hiện đại nhằm định vị chính xác <strong>Trọng điểm</strong>, giải phóng chèn ép hệ thần kinh tủy sống.
-                    </p>
-                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
-                        <a href="#dat-lich" class="inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold text-white bg-emerald-800 hover:bg-emerald-900 rounded-xl transition-all shadow-lg shadow-emerald-800/25 gap-2 focus:outline-none focus:ring-2 focus:ring-emerald-800">
-                            <i data-lucide="calendar" class="w-5 h-5"></i>
-                            Đặt Lịch Tầm Soát Ngay
-                        </a>
-                        <a href="#anh-huong-chuc-nang" class="inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all gap-2 focus:outline-none focus:ring-2 focus:ring-slate-400">
-                            Xem Sơ Đồ Cột Sống
-                            <i data-lucide="arrow-down" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Ảnh Châu Á Đông Y kết hợp -->
-                <div class="lg:col-span-5 relative">
-                    <div class="bg-white p-3 rounded-3xl shadow-xl border border-slate-100 relative">
-                        <img 
-                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800&h=400" 
-                            alt="Bác sĩ Đông Y thám khám cột sống" 
-                            class="rounded-2xl object-cover h-[400px] w-full"
-                            loading="lazy"
-                            width="800"
-                            height="400"
-                        >
-                        <div class="absolute bottom-6 left-6 right-6 p-4 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <div class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl">
-                                    <i data-lucide="hand" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-500 font-medium">Kỹ thuật phần mềm ngón tay</p>
-                                    <p class="text-sm font-bold text-slate-900">Nhẹ nhàng • Chính xác • An toàn</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION: HÌNH ẢNH CỘT SỐNG & ẢNH HƯỞNG CHỨC NĂNG (INTERACTIVE CHART) -->
-    <section id="anh-huong-chuc-nang" class="py-20 bg-emerald-900 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-300">Cơ Chế Sinh Lý Thần Kinh</h2>
-                <p class="text-3xl sm:text-4xl font-bold">Cột Sống & Ảnh Hưởng Tới Chức Năng Cơ Thể</p>
-                <p class="text-emerald-100 text-sm">31 đôi dây thần kinh tủy sống đi ra từ cột sống chi phối toàn bộ cơ quan nội tạng và vận động. Sai lệch đốt sống gây ảnh hưởng trực tiếp đến sức khỏe.</p>
-            </div>
-
-            <!-- Sơ đồ liên kết Cột sống & Cơ quan -->
-            <div class="grid lg:grid-cols-12 gap-8 items-start">
-                
-                <!-- Minh họa hình thái cột sống -->
-                <div class="lg:col-span-5 bg-emerald-950/60 p-6 rounded-3xl border border-emerald-800 flex flex-col items-center">
-                    <h3 class="text-lg font-bold text-emerald-200 mb-4 text-center">Các Phân Đoạn Cột Sống</h3>
-                    <div class="relative w-full max-w-[280px]">
-                        <img 
-                            src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80&w=600&h=420" 
-                            alt="Mô hình cột sống y khoa" 
-                            class="rounded-2xl w-full h-[420px] object-cover opacity-90"
-                            loading="lazy"
-                            width="600"
-                            height="420"
-                        >
-                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-center text-xs text-emerald-200 bg-emerald-900/80 p-2.5 rounded-xl border border-emerald-700">
-                            "Mọi biến đổi ở Cột sống đều tương ứng với một điểm mất cân bằng trong cơ thể."
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Danh sách 3 vùng phân đoạn cột sống và tác động -->
-                <div class="lg:col-span-7 space-y-4">
-                    
-                    <!-- Vùng 1: Cổ -->
-                    <div class="bg-emerald-800/50 hover:bg-emerald-800 border border-emerald-700 p-6 rounded-2xl transition-all focus-within:ring-2 focus-within:ring-emerald-400">
-                        <div class="flex items-start gap-4">
-                            <div class="p-3 bg-emerald-700 rounded-xl shrink-0 font-bold text-amber-300">C1-C7</div>
-                            <div class="space-y-2">
-                                <h4 class="text-lg font-bold text-white flex items-center gap-2">
-                                    Cột Sống Cổ (Cervical Spine)
-                                </h4>
-                                <p class="text-sm text-emerald-100">Chi phối vùng đầu, mặt, mắt, tai, tuyến giáp và hai tay.</p>
-                                <div class="bg-emerald-950/50 p-3 rounded-xl border border-emerald-700/50 text-xs text-emerald-200">
-                                    <strong class="text-amber-300">Triệu chứng khi bị biến đổi/chèn ép:</strong> Đau cổ vai gáy, mất ngủ, đau đầu, hoa mắt, chóng mặt (tiền đình), tê bì ngón tay, suy giảm trí nhớ.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Vùng 2: Ngực -->
-                    <div class="bg-emerald-800/50 hover:bg-emerald-800 border border-emerald-700 p-6 rounded-2xl transition-all focus-within:ring-2 focus-within:ring-emerald-400">
-                        <div class="flex items-start gap-4">
-                            <div class="p-3 bg-emerald-700 rounded-xl shrink-0 font-bold text-amber-300">T1-T12</div>
-                            <div class="space-y-2">
-                                <h4 class="text-lg font-bold text-white flex items-center gap-2">
-                                    Cột Sống Ngực (Thoracic Spine)
-                                </h4>
-                                <p class="text-sm text-emerald-100">Liên kết với Hệ thần kinh giao cảm chi phối Tim, Phổi, Dạ dày, Gan, Tụy, Thận.</p>
-                                <div class="bg-emerald-950/50 p-3 rounded-xl border border-emerald-700/50 text-xs text-emerald-200">
-                                    <strong class="text-amber-300">Triệu chứng khi bị biến đổi/chèn ép:</strong> Đau liên sườn, hồi hộp, tim đập nhanh, khó thở, trào ngược dạ dày, đầy hơi, mệt mỏi mạn tính.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Vùng 3: Thắt lưng & Cùng -->
-                    <div class="bg-emerald-800/50 hover:bg-emerald-800 border border-emerald-700 p-6 rounded-2xl transition-all focus-within:ring-2 focus-within:ring-emerald-400">
-                        <div class="flex items-start gap-4">
-                            <div class="p-3 bg-emerald-700 rounded-xl shrink-0 font-bold text-amber-300">L1-S5</div>
-                            <div class="space-y-2">
-                                <h4 class="text-lg font-bold text-white flex items-center gap-2">
-                                    Thắt Lưng & Cùng Cốt (Lumbar & Sacral)
-                                </h4>
-                                <p class="text-sm text-emerald-100">Chi phối ruột, bàng quang, cơ quan sinh dục và toàn bộ hai chi dưới.</p>
-                                <div class="bg-emerald-950/50 p-3 rounded-xl border border-emerald-700/50 text-xs text-emerald-200">
-                                    <strong class="text-amber-300">Triệu chứng khi bị biến đổi/chèn ép:</strong> Đau thắt lưng, thoát vị đĩa đệm, đau thần kinh tọa (đau lan xuống mông/chân), tê chân, rối loạn tiết niệu/sinh lý.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRƯỜNG PHÁI TĐCS & Y HỌC HIỆN ĐẠI -->
-    <section id="di-san-khoa-hoc" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold">
-                        Nghiên cứu & Thừa kế
-                    </div>
-                    <h2 class="text-3xl font-bold text-slate-900 leading-tight">
-                        Chữa Bệnh Không Dùng Thuốc Bằng Phần Mềm Đầu Ngón Tay
-                    </h2>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        Phương pháp Tác động Cột sống do Cố Lương Y Nguyễn Tham Tán sáng lập là phương pháp chữa bệnh thuần Việt. Bằng việc sử dụng phần mềm đầu ngón tay tác động lên hệ thống đốt sống, lương y tìm ra các điểm biến đổi (Trọng điểm) để giải tỏa sự co thắt của lớp cơ, khôi phục cân bằng cho hệ thần kinh và cột sống.
+                    <p class="text-base sm:text-lg text-ink-700 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Kế thừa trọn vẹn phương pháp <strong>Tác Động Cột Sống</strong> của Cố Lương y <strong>Nguyễn Tham Tán</strong>. Sử dụng đôi bàn tay chẩn đoán qua biến đổi lớp cơ, nhiệt độ và giải tỏa trọng điểm trên hệ cột sống — giúp cơ thể tự lập lại cân bằng tự nhiên, an toàn và bền vững.
                     </p>
 
-                    <div class="space-y-3">
-                        <div class="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-700 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-700"><strong>Thủ thuật tinh tế:</strong> Áp dụng các thủ thuật Bật, Xoay, Miết, Vuốt... hoàn toàn bằng cảm giác vân tay.</span>
+                    <!-- Dual CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#danh-gia-online" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-jade-900 hover:bg-jade-800 text-parchment-50 font-semibold text-base shadow-lg shadow-jade-900/20 transition-all border border-amber-500/40">
+                            <span>Đánh Giá Triệu Chứng Online</span>
+                            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </a>
+                        <a href="#ban-do-cot-song" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-parchment-50 hover:bg-parchment-200 text-jade-900 font-semibold text-base border border-jade-900/25 transition-all">
+                            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                            </svg>
+                            <span>Tra Cứu Bản Đồ Đốt Sống</span>
+                        </a>
+                    </div>
+
+                    <!-- 3 Key Trust Badges -->
+                    <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-amber-600/20">
+                        <div class="text-center lg:text-left">
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-jade-900">1970s</p>
+                            <p class="text-xs sm:text-sm text-ink-500 mt-0.5">Di sản nghiên cứu chuẩn mực</p>
                         </div>
-                        <div class="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-700 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-700"><strong>Nguyên tắc Sinh học:</strong> Không dùng lực thô bạo gây tổn thương dây chằng và đĩa đệm.</span>
+                        <div class="text-center lg:text-left border-x border-amber-600/20 px-2 sm:px-4">
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-amber-600">Bộ Y Tế</p>
+                            <p class="text-xs sm:text-sm text-ink-500 mt-0.5">Công nhận & đưa vào giảng dạy</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-jade-900">100%</p>
+                            <p class="text-xs sm:text-sm text-ink-500 mt-0.5">Không dùng thuốc, không xâm lấn</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hình ảnh người Châu Á trị liệu Đông Y -->
-                <div class="lg:col-span-6">
-                    <div class="relative">
-                        <img 
-                            src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=800&h=380" 
-                            alt="Chăm sóc sức khỏe người Việt Nam" 
-                            class="rounded-3xl shadow-lg border border-slate-100 object-cover h-[380px] w-full"
-                            loading="lazy"
-                            width="800"
-                            height="380"
-                        >
+                <!-- Right Artwork (5 cols): Minh họa nghệ thuật Trục Âm Dương & Cột Sống Cân Bằng -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md aspect-[4/5] rounded-3xl bg-gradient-to-b from-jade-900 via-jade-950 to-jade-900 p-6 sm:p-8 shadow-2xl eastern-frame flex flex-col justify-between text-parchment-100 overflow-hidden">
+                        <!-- Họa tiết mây lành & vòng tròn Thái Cực cách điệu -->
+                        <svg class="absolute inset-0 w-full h-full opacity-20 animate-breath pointer-events-none" viewBox="0 0 400 500" fill="none">
+                            <circle cx="200" cy="250" r="170" stroke="#D4A373" stroke-width="1"/>
+                            <circle cx="200" cy="250" r="135" stroke="#D4A373" stroke-width="0.75" stroke-dasharray="4 4"/>
+                            <path d="M200 80 C293.888 80 370 156.112 370 250 C370 343.888 293.888 420 200 420 C246.944 420 285 381.944 285 335 C285 288.056 246.944 250 200 250 C153.056 250 115 211.944 115 165 C115 118.056 153.056 80 200 80 Z" stroke="#D4A373" stroke-width="0.8"/>
+                        </svg>
+
+                        <!-- Top Inscription -->
+                        <div class="relative z-10 flex items-center justify-between border-b border-amber-400/20 pb-4">
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Triết Lý Trị Liệu</p>
+                                <p class="font-serif text-xl text-parchment-50">Cột Sống Là Trụ Cột Sự Sống</p>
+                            </div>
+                            <span class="w-10 h-10 rounded-full border border-amber-400/40 flex items-center justify-center font-serif text-amber-400 text-lg font-bold">
+                                正
+                            </span>
+                        </div>
+
+                        <!-- Center Artistic Spine Illustration -->
+                        <div class="relative z-10 my-auto py-4 flex items-center justify-center">
+                            <svg class="w-52 h-64 drop-shadow-lg" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Trục năng lượng trung tâm -->
+                                <line x1="100" y1="15" x2="100" y2="245" stroke="#D4A373" stroke-width="1.5" stroke-dasharray="3 3"/>
+                                <!-- Các đốt sống cách điệu theo đường cong sinh lý -->
+                                <g fill="#FAF7F2" fill-opacity="0.92">
+                                    <!-- Cổ C1-C7 -->
+                                    <rect x="86" y="24" width="28" height="9" rx="4.5" transform="rotate(-3 100 28)"/>
+                                    <rect x="84" y="38" width="32" height="10" rx="5" transform="rotate(-2 100 43)"/>
+                                    <rect x="83" y="53" width="34" height="10" rx="5"/>
+                                    <rect x="84" y="68" width="32" height="11" rx="5.5" transform="rotate(2 100 73)"/>
+                                    <!-- Ngực T1-T12 -->
+                                    <rect x="81" y="85" width="38" height="12" rx="6" fill="#D4A373"/>
+                                    <rect x="79" y="103" width="42" height="12" rx="6"/>
+                                    <rect x="78" y="121" width="44" height="13" rx="6.5"/>
+                                    <rect x="79" y="140" width="42" height="13" rx="6.5" fill="#D4A373"/>
+                                    <!-- Thắt lưng L1-L5 -->
+                                    <rect x="76" y="159" width="48" height="15" rx="7.5"/>
+                                    <rect x="75" y="180" width="50" height="16" rx="8"/>
+                                    <rect x="77" y="202" width="46" height="15" rx="7.5" fill="#D4A373"/>
+                                    <!-- Xương cùng -->
+                                    <path d="M82 223 H118 L108 244 C105 248 95 248 92 244 L82 223 Z" fill="#FAF7F2" fill-opacity="0.85"/>
+                                </g>
+                                <!-- Các điểm "Trọng Điểm" phát sáng -->
+                                <circle cx="100" cy="43" r="4" fill="#B58338"/>
+                                <circle cx="100" cy="43" r="9" stroke="#D4A373" stroke-width="1" stroke-opacity="0.7"/>
+                                <circle cx="100" cy="146" r="4.5" fill="#B58338"/>
+                                <circle cx="100" cy="146" r="11" stroke="#D4A373" stroke-width="1" stroke-opacity="0.7"/>
+                                <circle cx="100" cy="188" r="4.5" fill="#B58338"/>
+                                <circle cx="100" cy="188" r="11" stroke="#D4A373" stroke-width="1" stroke-opacity="0.7"/>
+                            </svg>
+                        </div>
+
+                        <!-- Bottom Quote -->
+                        <div class="relative z-10 bg-jade-800/60 backdrop-blur-sm rounded-2xl p-4 border border-amber-400/20">
+                            <p class="font-serif italic text-base text-parchment-50 leading-snug">
+                                “Bệnh tại cột sống hay nội tạng đều phản chiếu qua sự biến đổi của đốt sống, lớp cơ, nhiệt độ và cảm giác.”
+                            </p>
+                            <p class="text-xs text-amber-400 font-medium mt-2">
+                                — Nguyên lý Cố Lương y Nguyễn Tham Tán
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -329,225 +317,997 @@
         </div>
     </section>
 
-    <!-- QUY TRÌNH 4 ĐẶC TRƯNG -->
-    <section id="quy-trinh" class="py-20 bg-slate-50">
+    <!-- ==================== 3. DI SẢN & 4 ĐẶC TRƯNG CỐT LÕI ==================== -->
+    <section id="di-san" class="py-16 sm:py-24 bg-parchment-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Phương Pháp Chuẩn Đoán Nguyên Bản</h2>
-                <p class="text-3xl font-bold text-slate-900">4 Đặc Trưng Để Xác Định Trọng Điểm</p>
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Nền Tảng Học Thuật & Thực Tiễn</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-jade-900 mt-2">
+                    Di Sản Lương Y Nguyễn Tham Tán & 4 Nguyên Lý Vàng
+                </h2>
+                <div class="w-24 h-0.5 bg-amber-600 mx-auto my-5"></div>
+                <p class="text-ink-700 text-base sm:text-lg leading-relaxed">
+                    Khác với các kỹ thuật nắn bẻ khớp thô bạo, Tác Động Cột Sống Việt Nam là một hệ thống y học chính thống, sử dụng phần mềm đầu ngón tay để khám và giải tỏa các điểm co cứng bệnh lý một cách tinh tế.
+                </p>
             </div>
 
+            <!-- 4 Cards Grid -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-3 hover:shadow-md transition-shadow focus-within:ring-2 focus-within:ring-emerald-800">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">1</div>
-                    <h3 class="font-bold text-slate-900">Cột Sống</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">Xác định các dạng sai lệch: Lồi, Lệch, Lõm, Dày hoặc Mỏng của từng đốt sống.</p>
+                <!-- Card 1 -->
+                <div class="bg-parchment-50 rounded-2xl p-7 border border-amber-600/25 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center font-serif text-2xl font-bold mb-5 group-hover:scale-105 transition-transform">
+                        01
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-jade-900 mb-3">
+                        Chẩn Bệnh Qua 4 Đặc Trưng
+                    </h3>
+                    <p class="text-sm text-ink-700 leading-relaxed mb-4">
+                        Người thầy thuốc dùng xúc giác nhạy bén của đầu ngón tay để nhận diện đồng bộ 4 dấu hiệu trên vùng cột sống:
+                    </p>
+                    <ul class="space-y-1.5 text-xs font-medium text-jade-900">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>Hình thái Đốt sống (lồi, lệch, lõm)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>Lớp cơ (co cứng, xơ sợi, teo nhẽo)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>Nhiệt độ da vùng bệnh lý</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>Cảm giác đau tại trọng điểm</li>
+                    </ul>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-3 hover:shadow-md transition-shadow focus-within:ring-2 focus-within:ring-emerald-800">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">2</div>
-                    <h3 class="font-bold text-slate-900">Lớp Cơ</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">Thám khám độ co thắt, xơ cứng, co bóp hay teo nhão của lớp cơ liên kết dọc sống lưng.</p>
+                <!-- Card 2 -->
+                <div class="bg-parchment-50 rounded-2xl p-7 border border-amber-600/25 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center font-serif text-2xl font-bold mb-5 group-hover:scale-105 transition-transform">
+                        02
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-jade-900 mb-3">
+                        Giải Tỏa Trọng Điểm Bằng Phần Mềm
+                    </h3>
+                    <p class="text-sm text-ink-700 leading-relaxed">
+                        Không dùng lực bẻ rắc khớp, không châm kim hay dùng thuốc. Chỉ dùng phần mềm đầu ngón tay tác động các thủ thuật chuyên biệt (đẩy, xoay, bật, rung, miết...) vào đúng <strong>Trọng điểm</strong> để giải tỏa co thắt cơ và giải phóng chèn ép thần kinh.
+                    </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-3 hover:shadow-md transition-shadow focus-within:ring-2 focus-within:ring-emerald-800">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">3</div>
-                    <h3 class="font-bold text-slate-900">Nhiệt Độ</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">Định vị điểm biến đổi nhiệt độ bất thường trên da (nóng hoặc lạnh) phản ánh nội tạng bị rối loạn.</p>
+                <!-- Card 3 -->
+                <div class="bg-parchment-50 rounded-2xl p-7 border border-amber-600/25 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center font-serif text-2xl font-bold mb-5 group-hover:scale-105 transition-transform">
+                        03
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-jade-900 mb-3">
+                        Định Lượng • Định Tính • Định Vị
+                    </h3>
+                    <p class="text-sm text-ink-700 leading-relaxed">
+                        Mỗi lần trị liệu đều tuân thủ chặt chẽ nguyên tắc: xác định chính xác vị trí (Định vị), tính chất biến đổi bệnh lý (Định tính) và liều lượng lực tác động vừa đủ theo ngưỡng chịu đựng của từng cơ địa (Định lượng).
+                    </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-3 hover:shadow-md transition-shadow focus-within:ring-2 focus-within:ring-emerald-800">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">4</div>
-                    <h3 class="font-bold text-slate-900">Cảm Giác</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">Tìm điểm nhạy cảm đau (Trọng điểm) của bệnh nhân để tiến hành giải tỏa chính xác.</p>
+                <!-- Card 4 -->
+                <div class="bg-parchment-50 rounded-2xl p-7 border border-amber-600/25 shadow-sm hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center font-serif text-2xl font-bold mb-5 group-hover:scale-105 transition-transform">
+                        04
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-jade-900 mb-3">
+                        Tôn Trọng Cơ Chế Tự Cân Bằng
+                    </h3>
+                    <p class="text-sm text-ink-700 leading-relaxed">
+                        Khi lớp cơ được làm mềm và nhiệt độ vùng da trở lại bình thường, đốt sống tự động hồi phục về vị trí sinh lý cân bằng. Từ đó khí huyết lưu thông, hệ thần kinh thực vật điều hòa và cơ thể tự phục hồi từ gốc.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FORM ĐẶT LỊCH -->
-    <section id="dat-lich" class="py-20 bg-slate-900 text-white">
+    <!-- ==================== 4. TÍNH NĂNG TƯƠNG TÁC 1: BẢN ĐỒ TRA CỨU ĐỐT SỐNG ==================== -->
+    <section id="ban-do-cot-song" class="py-16 sm:py-24 bg-parchment-200/70 border-y border-amber-600/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-6 space-y-6">
-                    <h2 class="text-3xl font-bold leading-tight">Đặt Lịch Chăm Sóc Cột Sống Trực Tiếp</h2>
-                    <p class="text-slate-400 text-sm">
-                        Đừng để những mỏi mệt kéo dài trở thành bệnh lý mãn tính. Hãy để chúng tôi giúp bạn khôi phục sự cân bằng cột sống tự nhiên.
-                    </p>
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-center gap-4">
-                            <div class="p-3 bg-slate-800 rounded-xl text-emerald-400">
-                                <i data-lucide="map-pin" class="w-5 h-5"></i>
-                            </div>
-                            <div class="text-sm">
-                                <div class="text-slate-400 text-xs">Địa chỉ chăm sóc</div>
-                                <div class="font-medium">Thôn Đoài, Phúc Thịnh, Hà Nội</div>
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Khám Phá Giải Phẫu & Bệnh Lý</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-jade-900 mt-2">
+                    Bản Đồ Tra Cứu Hệ Cột Sống Tương Tác
+                </h2>
+                <p class="text-ink-700 mt-3 text-sm sm:text-base">
+                    Bấm chọn từng phân đoạn đốt sống trên sơ đồ bên dưới để tìm hiểu mối liên hệ giữa đốt sống, lớp cơ và các triệu chứng bạn đang gặp phải.
+                </p>
+            </div>
+
+            <!-- Interactive Spine Explorer Container -->
+            <div class="bg-parchment-50 rounded-3xl border border-amber-600/30 shadow-xl overflow-hidden">
+                <div class="grid lg:grid-cols-12">
+                    
+                    <!-- Left Column: Interactive SVG Diagram & Zone Selector (5 cols) -->
+                    <div class="lg:col-span-5 bg-jade-900 p-6 sm:p-8 text-parchment-100 flex flex-col justify-between relative">
+                        <div class="mb-4">
+                            <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Bước 1: Chọn Vùng Cột Sống</span>
+                            <h3 class="font-serif text-2xl text-parchment-50 mt-1">Chạm vào vùng đốt sống</h3>
+                        </div>
+
+                        <!-- Quick Pill Buttons (for easy mobile tapping) -->
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <button type="button" data-zone="cervical" class="zone-btn active px-3 py-2.5 rounded-xl text-left text-xs font-semibold bg-amber-600 text-parchment-50 border border-amber-400 transition-all">
+                                1. Vùng Cổ (C1 – C7)
+                            </button>
+                            <button type="button" data-zone="thoracic" class="zone-btn px-3 py-2.5 rounded-xl text-left text-xs font-semibold bg-jade-800/80 text-parchment-200 hover:bg-jade-800 border border-amber-400/20 transition-all">
+                                2. Vùng Ngực (T1 – T12)
+                            </button>
+                            <button type="button" data-zone="lumbar" class="zone-btn px-3 py-2.5 rounded-xl text-left text-xs font-semibold bg-jade-800/80 text-parchment-200 hover:bg-jade-800 border border-amber-400/20 transition-all">
+                                3. Thắt Lưng (L1 – L5)
+                            </button>
+                            <button type="button" data-zone="sacral" class="zone-btn px-3 py-2.5 rounded-xl text-left text-xs font-semibold bg-jade-800/80 text-parchment-200 hover:bg-jade-800 border border-amber-400/20 transition-all">
+                                4. Cùng Cụt (S1 – S5)
+                            </button>
+                        </div>
+
+                        <!-- Interactive SVG Spine -->
+                        <div class="flex-1 flex items-center justify-center py-2">
+                            <svg class="w-full max-w-[270px] h-auto" viewBox="0 0 280 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Trục tham chiếu -->
+                                <line x1="95" y1="15" x2="95" y2="395" stroke="#D4A373" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+                                <!-- ZONE 1: CERVICAL (C1-C7) -->
+                                <g id="svg-zone-cervical" class="spine-zone active" data-zone="cervical">
+                                    <rect x="65" y="18" width="60" height="78" rx="14" fill="#FAF7F2" fill-opacity="0.08"/>
+                                    <rect class="vertebra-node" x="79" y="25" width="32" height="10" rx="5" fill="#D4A373"/>
+                                    <rect class="vertebra-node" x="77" y="40" width="36" height="11" rx="5.5" fill="#D4A373"/>
+                                    <rect class="vertebra-node" x="76" y="56" width="38" height="11" rx="5.5" fill="#D4A373"/>
+                                    <rect class="vertebra-node" x="77" y="72" width="36" height="12" rx="6" fill="#D4A373"/>
+                                    <!-- Callout Line & Label -->
+                                    <line x1="125" y1="55" x2="155" y2="55" stroke="#D4A373" stroke-width="1.5"/>
+                                    <rect class="zone-badge" x="155" y="40" width="115" height="30" rx="8" fill="#24553F" stroke="#D4A373" stroke-width="1"/>
+                                    <text class="zone-badge-text" x="212" y="59" text-anchor="middle" fill="#FAF7F2" font-size="11" font-weight="600">Cổ (C1 – C7)</text>
+                                </g>
+
+                                <!-- ZONE 2: THORACIC (T1-T12) -->
+                                <g id="svg-zone-thoracic" class="spine-zone" data-zone="thoracic">
+                                    <rect x="60" y="102" width="70" height="125" rx="14" fill="#FAF7F2" fill-opacity="0.05"/>
+                                    <rect class="vertebra-node" x="74" y="110" width="42" height="13" rx="6.5" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="72" y="129" width="46" height="13" rx="6.5" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="71" y="148" width="48" height="14" rx="7" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="72" y="168" width="46" height="14" rx="7" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="73" y="188" width="44" height="14" rx="7" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="74" y="208" width="42" height="14" rx="7" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <!-- Callout -->
+                                    <line x1="130" y1="164" x2="155" y2="164" stroke="#D4A373" stroke-width="1.5"/>
+                                    <rect class="zone-badge" x="155" y="149" width="115" height="30" rx="8" fill="#24553F" stroke="#D4A373" stroke-width="1"/>
+                                    <text class="zone-badge-text" x="212" y="168" text-anchor="middle" fill="#FAF7F2" font-size="11" font-weight="600">Ngực (T1 – T12)</text>
+                                </g>
+
+                                <!-- ZONE 3: LUMBAR (L1-L5) -->
+                                <g id="svg-zone-lumbar" class="spine-zone" data-zone="lumbar">
+                                    <rect x="58" y="234" width="74" height="96" rx="14" fill="#FAF7F2" fill-opacity="0.05"/>
+                                    <rect class="vertebra-node" x="70" y="242" width="50" height="16" rx="8" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="68" y="264" width="54" height="17" rx="8.5" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="68" y="287" width="54" height="17" rx="8.5" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <rect class="vertebra-node" x="70" y="310" width="50" height="16" rx="8" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <!-- Callout -->
+                                    <line x1="132" y1="282" x2="155" y2="282" stroke="#D4A373" stroke-width="1.5"/>
+                                    <rect class="zone-badge" x="155" y="267" width="115" height="30" rx="8" fill="#24553F" stroke="#D4A373" stroke-width="1"/>
+                                    <text class="zone-badge-text" x="212" y="286" text-anchor="middle" fill="#FAF7F2" font-size="11" font-weight="600">Thắt Lưng (L1–L5)</text>
+                                </g>
+
+                                <!-- ZONE 4: SACRAL (S1-S5) -->
+                                <g id="svg-zone-sacral" class="spine-zone" data-zone="sacral">
+                                    <rect x="62" y="336" width="66" height="60" rx="14" fill="#FAF7F2" fill-opacity="0.05"/>
+                                    <path class="vertebra-node" d="M72 344 H118 L105 384 C101 390 89 390 85 384 L72 344 Z" fill="#FAF7F2" fill-opacity="0.85"/>
+                                    <!-- Callout -->
+                                    <line x1="128" y1="365" x2="155" y2="365" stroke="#D4A373" stroke-width="1.5"/>
+                                    <rect class="zone-badge" x="155" y="350" width="115" height="30" rx="8" fill="#24553F" stroke="#D4A373" stroke-width="1"/>
+                                    <text class="zone-badge-text" x="212" y="369" text-anchor="middle" fill="#FAF7F2" font-size="11" font-weight="600">Cùng Cụt (S1–S5)</text>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <p class="text-xs text-parchment-200/80 text-center mt-2">
+                            * Mẹo: Bấm vào từng phân đoạn để xem chi tiết biến đổi bệnh lý.
+                        </p>
+                    </div>
+
+                    <!-- Right Column: Dynamic Clinical Information Panel (7 cols) -->
+                    <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between bg-parchment-50">
+                        <div id="spine-detail-content" class="space-y-6">
+                            <!-- Nội dung sẽ được render tự động bằng JS, mặc định hiển thị Vùng Cổ -->
+                        </div>
+
+                        <!-- Bottom Action inside Explorer -->
+                        <div class="mt-8 pt-6 border-t border-amber-600/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <p class="text-xs sm:text-sm text-ink-700">
+                                Bạn có triệu chứng tương tự vùng đốt sống này?
+                            </p>
+                            <a href="#dat-lich" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-amber-600 hover:bg-amber-700 text-parchment-50 text-sm font-semibold transition-colors shrink-0">
+                                <span>Nhờ Lương Y Tư Vấn Ngay</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. TÍNH NĂNG TƯƠNG TÁC 2: TỰ ĐÁNH GIÁ SỨC KHỎE CỘT SỐNG ==================== -->
+    <section id="danh-gia-online" class="py-16 sm:py-24 bg-parchment-100 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-jade-900/10 text-jade-900 text-xs font-bold uppercase tracking-wider mb-3">
+                    Công Cụ Sàng Lọc Sơ Bộ
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-jade-900">
+                    Tự Đánh Giá Sức Khỏe Cột Sống Online
+                </h2>
+                <p class="text-ink-700 mt-3 text-sm sm:text-base">
+                    Chọn các biểu hiện bạn đang gặp phải trong 2 tuần gần đây để hệ thống phân tích vùng đốt sống liên quan theo nguyên lý Tác Động Cột Sống.
+                </p>
+            </div>
+
+            <div class="bg-parchment-50 rounded-3xl border border-amber-600/30 shadow-xl p-6 sm:p-10">
+                <form id="health-quiz-form" class="space-y-8">
+                    <!-- Step 1: Select Symptoms -->
+                    <div>
+                        <label class="block font-serif text-xl sm:text-2xl font-bold text-jade-900 mb-4">
+                            1. Bạn đang gặp những biểu hiện nào dưới đây? <span class="text-sm font-sans font-normal text-ink-500">(Có thể chọn nhiều mục)</span>
+                        </label>
+                        <div class="grid sm:grid-cols-2 gap-3.5">
+                            <label class="symptom-option flex items-start gap-3.5 p-4 rounded-2xl border border-amber-600/25 bg-parchment-100/60 hover:bg-parchment-200/70 cursor-pointer transition-all">
+                                <input type="checkbox" name="symptom" value="neck" class="mt-1 w-5 h-5 rounded text-jade-900 focus:ring-jade-900 accent-jade-900">
+                                <div>
+                                    <span class="block font-semibold text-ink-900 text-sm sm:text-base">Đau mỏi cổ, cứng gáy, bả vai</span>
+                                    <span class="block text-xs text-ink-500 mt-0.5">Khó quay đầu, mỏi tăng khi ngồi máy tính hoặc lái xe</span>
+                                </div>
+                            </label>
+
+                            <label class="symptom-option flex items-start gap-3.5 p-4 rounded-2xl border border-amber-600/25 bg-parchment-100/60 hover:bg-parchment-200/70 cursor-pointer transition-all">
+                                <input type="checkbox" name="symptom" value="head" class="mt-1 w-5 h-5 rounded text-jade-900 focus:ring-jade-900 accent-jade-900">
+                                <div>
+                                    <span class="block font-semibold text-ink-900 text-sm sm:text-base">Đau đầu sau gáy, hoa mắt, khó ngủ</span>
+                                    <span class="block text-xs text-ink-500 mt-0.5">Ù tai, giảm trí nhớ, dễ mệt mỏi khi thay đổi thời tiết</span>
+                                </div>
+                            </label>
+
+                            <label class="symptom-option flex items-start gap-3.5 p-4 rounded-2xl border border-amber-600/25 bg-parchment-100/60 hover:bg-parchment-200/70 cursor-pointer transition-all">
+                                <input type="checkbox" name="symptom" value="arm_numb" class="mt-1 w-5 h-5 rounded text-jade-900 focus:ring-jade-900 accent-jade-900">
+                                <div>
+                                    <span class="block font-semibold text-ink-900 text-sm sm:text-base">Tê bì cánh tay, bàn tay hoặc ngón tay</span>
+                                    <span class="block text-xs text-ink-500 mt-0.5">Cảm giác kiến bò, cầm nắm yếu, tê nhiều về đêm</span>
+                                </div>
+                            </label>
+
+                            <label class="symptom-option flex items-start gap-3.5 p-4 rounded-2xl border border-amber-600/25 bg-parchment-100/60 hover:bg-parchment-200/70 cursor-pointer transition-all">
+                                <input type="checkbox" name="symptom" value="thoracic" class="mt-1 w-5 h-5 rounded text-jade-900 focus:ring-jade-900 accent-jade-900">
+                                <div>
+                                    <span class="block font-semibold text-ink-900 text-sm sm:text-base">Đau tức vùng lưng giữa, tức ngực nhẹ</span>
+                                    <span class="block text-xs text-ink-500 mt-0.5">Hít sâu hơi tức, hay đầy bụng, trào ngược dạ dày</span>
+                                </div>
+                            </label>
+
+                            <label class="symptom-option flex items-start gap-3.5 p-4 rounded-2xl border border-amber-600/25 bg-parchment-100/60 hover:bg-parchment-200/70 cursor-pointer transition-all">
+                                <input type="checkbox" name="symptom" value="lumbar" class="mt-1 w-5 h-5 rounded text-jade-900 focus:ring-jade-900 accent-jade-900">
+                                <div>
+                                    <span class="block font-semibold text-ink-900 text-sm sm:text-base">Đau thắt lưng khi ngồi lâu hoặc cúi người</span>
+                                    <span class="block text-xs text-ink-500 mt-0.5">Sáng ngủ dậy lưng cứng đờ, đứng lên ngồi xuống khó khăn</span>
+                                </div>
+                            </label>
+
+                            <label class="symptom-option flex items-start gap-3.5 p-4 rounded-2xl border border-amber-600/25 bg-parchment-100/60 hover:bg-parchment-200/70 cursor-pointer transition-all">
+                                <input type="checkbox" name="symptom" value="sciatica" class="mt-1 w-5 h-5 rounded text-jade-900 focus:ring-jade-900 accent-jade-900">
+                                <div>
+                                    <span class="block font-semibold text-ink-900 text-sm sm:text-base">Đau lan xuống mông, đùi, bắp chân (Thần kinh tọa)</span>
+                                    <span class="block text-xs text-ink-500 mt-0.5">Tê buốt dọc mặt sau chân, đi bộ một đoạn phải dừng nghỉ</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Duration -->
+                    <div>
+                        <label class="block font-serif text-xl sm:text-2xl font-bold text-jade-900 mb-3">
+                            2. Tình trạng này kéo dài bao lâu rồi?
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-amber-600/25 bg-parchment-100/60 cursor-pointer">
+                                <input type="radio" name="duration" value="Mới khởi phát (dưới 1 tháng)" checked class="w-4 h-4 accent-jade-900">
+                                <span class="text-sm font-medium text-ink-900">Dưới 1 tháng (Cấp tính)</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-amber-600/25 bg-parchment-100/60 cursor-pointer">
+                                <input type="radio" name="duration" value="Từ 1 đến 6 tháng" class="w-4 h-4 accent-jade-900">
+                                <span class="text-sm font-medium text-ink-900">Từ 1 – 6 tháng</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-amber-600/25 bg-parchment-100/60 cursor-pointer">
+                                <input type="radio" name="duration" value="Trên 6 tháng (Mãn tính / Tái phát)" class="w-4 h-4 accent-jade-900">
+                                <span class="text-sm font-medium text-ink-900">Trên 6 tháng (Mãn tính)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Validation Message Box (replaces alert) -->
+                    <div id="quiz-error-msg" class="hidden p-4 rounded-xl bg-amber-100 border border-amber-600 text-amber-700 text-sm font-medium">
+                        Vui lòng chọn ít nhất 1 triệu chứng bạn đang gặp phải để hệ thống phân tích chính xác.
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-2">
+                        <button type="submit" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-jade-900 hover:bg-jade-800 text-parchment-50 font-semibold text-base shadow-lg transition-all border border-amber-500/40">
+                            <span>Xem Phân Tích Sơ Bộ Ngay</span>
+                            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Quiz Result Box (Hidden initially) -->
+                <div id="quiz-result-box" class="hidden mt-8 pt-8 border-t-2 border-dashed border-amber-600/30 animate-fadeIn">
+                    <div class="bg-jade-900 text-parchment-50 rounded-2xl p-6 sm:p-8 shadow-inner">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold uppercase tracking-wider">
+                                Kết Quả Sàng Lọc Sơ Bộ
+                            </span>
+                            <span id="result-duration-badge" class="text-xs text-parchment-200"></span>
+                        </div>
+
+                        <h3 id="result-headline" class="font-serif text-2xl sm:text-3xl font-bold text-amber-400 mb-3">
+                            <!-- Filled by JS -->
+                        </h3>
+
+                        <p id="result-analysis" class="text-sm sm:text-base text-parchment-100 leading-relaxed mb-6">
+                            <!-- Filled by JS -->
+                        </p>
+
+                        <!-- Lead Capture Form inside Result -->
+                        <div class="bg-parchment-50 text-ink-900 rounded-2xl p-5 sm:p-6">
+                            <h4 class="font-serif text-xl font-bold text-jade-900 mb-1">
+                                Nhận Phác Đồ Tư Vấn Chi Tiết Từ Lương Y
+                            </h4>
+                            <p class="text-xs sm:text-sm text-ink-500 mb-4">
+                                Để lại Số điện thoại hoặc Zalo, chuyên môn sẽ liên hệ phân tích kỹ hơn về vùng trọng điểm của bạn (hoàn toàn miễn phí).
+                            </p>
+                            <form id="quiz-lead-form" class="grid sm:grid-cols-12 gap-3">
+                                <input type="text" id="lead-name" required placeholder="Họ tên của bạn *" class="sm:col-span-4 px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900">
+                                <input type="tel" id="lead-phone" required placeholder="Số điện thoại / Zalo *" class="sm:col-span-4 px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900">
+                                <button type="submit" class="sm:col-span-4 px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-parchment-50 font-semibold text-sm transition-colors">
+                                    Gửi Yêu Cầu Tư Vấn
+                                </button>
+                            </form>
+                            <div id="quiz-lead-success" class="hidden mt-3 p-3 rounded-xl bg-jade-100 text-jade-900 text-sm font-medium">
+                                Cảm ơn bạn! Thông tin đánh giá đã được gửi tới phòng khám. Lương y sẽ liên hệ qua Zalo/SĐT trong thời gian sớm nhất.
                             </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="p-3 bg-slate-800 rounded-xl text-emerald-400">
-                                <i data-lucide="phone" class="w-5 h-5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. GÓC KIẾN THỨC & CÂU CHUYỆN HỒI PHỤC ==================== -->
+    <section id="kien-thuc" class="py-16 sm:py-24 bg-parchment-200/50 border-t border-amber-600/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Part A: Knowledge Hub (SEO Content Cards with Modal) -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Thư Viện Y Học Cổ Truyền</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-jade-900 mt-2">
+                        Góc Kiến Thức Chuyên Sâu
+                    </h2>
+                </div>
+                <p class="text-sm text-ink-700 max-w-md">
+                    Hiểu đúng về cơ chế tự phục hồi của cột sống để chủ động bảo vệ sức khỏe xương khớp mỗi ngày.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-7 mb-20">
+                <!-- Article Card 1 -->
+                <article class="bg-parchment-50 rounded-2xl border border-amber-600/25 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-jade-900 to-jade-700 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-amber-500/25 text-amber-300 text-xs font-medium">Cơ Chế Trị Liệu</span>
+                        <h3 class="font-serif text-2xl font-bold text-parchment-50 leading-snug relative z-10">
+                            Cơ chế tự phục hồi của đĩa đệm khi không dùng thuốc
+                        </h3>
+                        <!-- Decorative SVG -->
+                        <svg class="absolute -right-6 -bottom-6 w-32 h-32 text-amber-400/15" viewBox="0 0 100 100" fill="currentColor">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-ink-700 leading-relaxed mb-5">
+                            Đĩa đệm không có mạch máu nuôi trực tiếp mà thẩm thấu dinh dưỡng qua sự vận động và thư giãn của hệ cơ cạnh sống. Khi giải tỏa lớp cơ co cứng...
+                        </p>
+                        <button type="button" data-article="0" class="open-article-btn inline-flex items-center gap-2 text-sm font-semibold text-jade-900 hover:text-amber-700 transition-colors">
+                            <span>Đọc bài viết chi tiết</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article Card 2 -->
+                <article class="bg-parchment-50 rounded-2xl border border-amber-600/25 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-amber-700 to-amber-600 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-jade-950/30 text-parchment-50 text-xs font-medium">Dưỡng Sinh Tại Nhà</span>
+                        <h3 class="font-serif text-2xl font-bold text-parchment-50 leading-snug relative z-10">
+                            Bài tập 5 phút giải tỏa mỏi cổ vai gáy cho dân văn phòng
+                        </h3>
+                        <svg class="absolute -right-6 -bottom-6 w-32 h-32 text-parchment-50/15" viewBox="0 0 100 100" fill="currentColor">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-ink-700 leading-relaxed mb-5">
+                            Ngồi cúi nhìn màn hình máy tính khiến nhóm cơ thang và cơ ức đòn chũm chịu áp lực gấp 3 lần bình thường. Áp dụng ngay 3 động tác thở kết hợp kéo giãn...
+                        </p>
+                        <button type="button" data-article="1" class="open-article-btn inline-flex items-center gap-2 text-sm font-semibold text-jade-900 hover:text-amber-700 transition-colors">
+                            <span>Đọc hướng dẫn chi tiết</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Article Card 3 -->
+                <article class="bg-parchment-50 rounded-2xl border border-amber-600/25 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-jade-950 to-jade-800 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-amber-500/25 text-amber-300 text-xs font-medium">Kiến Thức Chuẩn Xác</span>
+                        <h3 class="font-serif text-2xl font-bold text-parchment-50 leading-snug relative z-10">
+                            Phân biệt Tác Động Cột Sống Việt Nam và nắn chỉnh bẻ khớp
+                        </h3>
+                        <svg class="absolute -right-6 -bottom-6 w-32 h-32 text-amber-400/15" viewBox="0 0 100 100" fill="currentColor">
+                            <circle cx="50" cy="50" r="45"/>
+                        </svg>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-ink-700 leading-relaxed mb-5">
+                            Nhiều người nhầm lẫn Tác Động Cột Sống với các phương pháp nắn bẻ tạo tiếng kêu "rắc". Thực tế, di sản của Cố Lương y Nguyễn Tham Tán hoàn toàn êm ái...
+                        </p>
+                        <button type="button" data-article="2" class="open-article-btn inline-flex items-center gap-2 text-sm font-semibold text-jade-900 hover:text-amber-700 transition-colors">
+                            <span>Tìm hiểu sự khác biệt</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Part B: Patient Recovery Stories (Testimonials) -->
+            <div class="bg-jade-900 rounded-3xl p-8 sm:p-12 text-parchment-100 eastern-frame">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Hành Trình Hồi Phục Thực Tế</span>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-parchment-50 mt-2">
+                        Cảm Nhận Từ Người Bệnh Đã Trị Liệu
+                    </h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-jade-800/60 rounded-2xl p-6 border border-amber-400/20 flex flex-col justify-between">
+                        <p class="text-sm text-parchment-100 leading-relaxed italic mb-5">
+                            “Tôi bị thoát vị đĩa đệm L4-L5 đau lan xuống chân trái gần 2 năm, đi lại rất khó khăn. Sau 2 liệu trình tác động phần mềm giải tỏa trọng điểm tại phòng khám, lưng nhẹ hẳn, ngủ ngon giấc mà không phải uống viên thuốc giảm đau nào.”
+                        </p>
+                        <div class="flex items-center gap-3 pt-4 border-t border-amber-400/15">
+                            <div class="w-10 h-10 rounded-full bg-amber-600/30 border border-amber-400/50 flex items-center justify-center font-serif font-bold text-amber-300">
+                                H
                             </div>
-                            <div class="text-sm">
-                                <div class="text-slate-400 text-xs">Hotline đặt lịch</div>
-                                <div class="font-medium">
-                                    <a href="tel:0898765865" class="hover:text-emerald-400 transition-colors">0898 765 865</a>
-                                </div>
+                            <div>
+                                <p class="font-semibold text-sm text-parchment-50">Bác Nguyễn Văn Hùng (56 tuổi)</p>
+                                <p class="text-xs text-amber-400">Đông Anh, Hà Nội • Đau thần kinh tọa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-jade-800/60 rounded-2xl p-6 border border-amber-400/20 flex flex-col justify-between">
+                        <p class="text-sm text-parchment-100 leading-relaxed italic mb-5">
+                            “Làm kế toán ngồi máy tính 9 tiếng mỗi ngày khiến tôi đau cứng cổ vai gáy, thường xuyên hoa mắt chóng mặt. Lương y khám bằng tay rất chuẩn xác từng điểm cơ co cứng, làm xong thấy đầu óc nhẹ bẫng, hai tay hết tê bì.”
+                        </p>
+                        <div class="flex items-center gap-3 pt-4 border-t border-amber-400/15">
+                            <div class="w-10 h-10 rounded-full bg-amber-600/30 border border-amber-400/50 flex items-center justify-center font-serif font-bold text-amber-300">
+                                T
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm text-parchment-50">Chị Trần Thu Trang (34 tuổi)</p>
+                                <p class="text-xs text-amber-400">Cầu Giấy, Hà Nội • Thoái hóa đốt sống cổ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-jade-800/60 rounded-2xl p-6 border border-amber-400/20 flex flex-col justify-between">
+                        <p class="text-sm text-parchment-100 leading-relaxed italic mb-5">
+                            “Tôi rất sợ các kiểu bẻ khớp mạnh bạo. Khi biết đến Tác Động Cột Sống theo phương pháp cụ Nguyễn Tham Tán ở Phúc Thịnh, tôi hoàn toàn yên tâm vì thao tác rất nhẹ nhàng, sâu lắng nhưng hiệu quả giữ được rất lâu.”
+                        </p>
+                        <div class="flex items-center gap-3 pt-4 border-t border-amber-400/15">
+                            <div class="w-10 h-10 rounded-full bg-amber-600/30 border border-amber-400/50 flex items-center justify-center font-serif font-bold text-amber-300">
+                                M
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm text-parchment-50">Cô Lê Thị Minh (62 tuổi)</p>
+                                <p class="text-xs text-amber-400">Sóc Sơn, Hà Nội • Rối loạn tiền đình & đau lưng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== 7. ĐẶT LỊCH KHÁM & FOOTER ==================== -->
+    <section id="dat-lich" class="py-16 sm:py-24 bg-parchment-100 border-t border-amber-600/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Info (5 cols) -->
+                <div id="lien-he" class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Liên Hệ & Thăm Khám</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-jade-900">
+                        Đặt Lịch Khám & Tư Vấn Trực Tiếp
+                    </h2>
+                    <p class="text-sm sm:text-base text-ink-700 leading-relaxed">
+                        Để đảm bảo mỗi người bệnh được thăm khám kỹ lưỡng 4 đặc trưng trên hệ cột sống (30–45 phút/buổi), quý khách vui lòng đặt lịch trước qua biểu mẫu hoặc Hotline/Zalo.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-parchment-50 border border-amber-600/20">
+                            <div class="w-10 h-10 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm text-jade-900">Địa chỉ Phòng khám</p>
+                                <p class="text-sm text-ink-700 mt-0.5">Thôn Đoài, Xã Phúc Thịnh, Huyện Đông Anh / Hà Nội</p>
+                            </div>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-parchment-50 border border-amber-600/20">
+                            <div class="w-10 h-10 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm text-jade-900">Thời gian làm việc</p>
+                                <p class="text-sm text-ink-700 mt-0.5">Thứ 2 – Chủ Nhật: 08:00 – 11:30 & 14:00 – 18:30</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone / Zalo -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-parchment-50 border border-amber-600/20">
+                            <div class="w-10 h-10 rounded-xl bg-jade-900 text-amber-400 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm text-jade-900">Hotline & Zalo Tư Vấn</p>
+                                <p class="text-sm text-ink-700 mt-0.5">Hỗ trợ giải đáp triệu chứng & đặt lịch hẹn nhanh</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-6 bg-white text-slate-900 p-8 rounded-3xl shadow-2xl">
-                    <form id="bookingForm" class="space-y-4" novalidate>
-                        <div>
-                            <label for="fullName" class="block text-xs font-bold uppercase text-slate-700 mb-2">Họ và tên <span class="text-red-500">*</span></label>
-                            <input 
-                                type="text" 
-                                id="fullName"
-                                name="fullName"
-                                required 
-                                placeholder="Nguyễn Văn A" 
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-700 text-sm"
-                                maxlength="100"
-                            >
-                            <span class="error-message text-red-500 text-xs mt-1 hidden"></span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
+                <!-- Right Booking Form (7 cols) -->
+                <div class="lg:col-span-7 bg-parchment-50 rounded-3xl p-6 sm:p-10 border border-amber-600/30 shadow-xl">
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-jade-900 mb-2">
+                        Phiếu Đăng Ký Thăm Khám
+                    </h3>
+                    <p class="text-xs sm:text-sm text-ink-500 mb-6">
+                        Thông tin của quý khách được bảo mật tuyệt đối theo quy định y tế.
+                    </p>
+
+                    <form id="booking-form" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="phone" class="block text-xs font-bold uppercase text-slate-700 mb-2">Số điện thoại <span class="text-red-500">*</span></label>
-                                <input 
-                                    type="tel" 
-                                    id="phone"
-                                    name="phone"
-                                    required 
-                                    placeholder="0901234567" 
-                                    pattern="[0-9]{10,11}"
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-700 text-sm"
-                                    maxlength="11"
-                                >
-                                <span class="error-message text-red-500 text-xs mt-1 hidden"></span>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-700 mb-1.5">Họ và tên *</label>
+                                <input type="text" id="book-name" required placeholder="Nhập họ tên người bệnh" class="w-full px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900">
                             </div>
                             <div>
-                                <label for="appointmentDate" class="block text-xs font-bold uppercase text-slate-700 mb-2">Ngày muốn khám</label>
-                                <input 
-                                    type="date" 
-                                    id="appointmentDate"
-                                    name="appointmentDate"
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-700 text-sm"
-                                >
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-700 mb-1.5">Số điện thoại / Zalo *</label>
+                                <input type="tel" id="book-phone" required placeholder="Nhập số điện thoại liên hệ" class="w-full px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900">
                             </div>
                         </div>
-                        <div>
-                            <label for="condition" class="block text-xs font-bold uppercase text-slate-700 mb-2">Tình trạng cần tư vấn</label>
-                            <select 
-                                id="condition"
-                                name="condition"
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-700 text-sm text-slate-600"
-                            >
-                                <option value="neck-headache">Đau Cổ Vai Gáy / Đau Đầu Mất Ngủ</option>
-                                <option value="back-pain">Đau Thắt Lưng / Tê Chân / Thần Kinh Tọa</option>
-                                <option value="disc-herniation">Thoát Vị Đĩa Đệm / Thoái Hóa Cột Sống</option>
-                                <option value="vertigo">Rối Loạn Tiền Đình / Mệt Mỏi Mạn Tính</option>
-                            </select>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-700 mb-1.5">Ngày dự kiến khám</label>
+                                <input type="date" id="book-date" class="w-full px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-700 mb-1.5">Vùng đau / Nhu cầu chính</label>
+                                <select id="book-area" class="w-full px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900">
+                                    <option value="Đau cổ vai gáy / Đau đầu">Đau cổ vai gáy / Đau đầu, hoa mắt</option>
+                                    <option value="Đau thắt lưng / Thoát vị đĩa đệm">Đau thắt lưng / Thoát vị đĩa đệm</option>
+                                    <option value="Đau thần kinh tọa / Tê bì chân tay">Đau thần kinh tọa / Tê bì chân tay</option>
+                                    <option value="Đau lưng giữa / Rối loạn tiêu hóa">Đau lưng giữa / Tức ngực, tiêu hóa</option>
+                                    <option value="Kiểm tra tổng quát cột sống">Kiểm tra tổng quát cột sống định kỳ</option>
+                                </select>
+                            </div>
                         </div>
-                        <button 
-                            type="submit" 
-                            class="w-full py-3.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-xl transition-all text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-800"
-                        >
-                            XÁC NHẬN ĐẶT LỊCH HẸN
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-ink-700 mb-1.5">Mô tả ngắn triệu chứng (nếu có)</label>
+                            <textarea id="book-note" rows="3" placeholder="Ví dụ: Đau lưng lan xuống chân phải khoảng 3 tháng nay, đã chụp MRI..." class="w-full px-4 py-3 rounded-xl border border-amber-600/30 bg-parchment-100 text-sm focus:outline-none focus:border-jade-900"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-jade-900 hover:bg-jade-800 text-parchment-50 font-semibold text-base shadow-lg transition-all border border-amber-500/40">
+                            Xác Nhận Đặt Lịch Tư Vấn
                         </button>
-                        <p class="text-xs text-slate-500 text-center">Chúng tôi sẽ liên hệ xác nhận lịch hẹn trong 2-4 giờ</p>
                     </form>
+
+                    <!-- Booking Confirmation Message Box -->
+                    <div id="booking-success-box" class="hidden mt-6 p-5 rounded-2xl bg-jade-100 border border-jade-700/30 text-jade-900">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-jade-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-base">Đăng ký lịch hẹn thành công!</h4>
+                                <p id="booking-summary-text" class="text-sm mt-1 leading-relaxed"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p>© 2026 Trung Tâm Chăm Sóc Sức Khỏe Tác Động Cột Sống.</p>
-            <p class="text-slate-500">Tôn vinh di sản Cố Lương Y Nguyễn Tham Tán</p>
+    <!-- Footer Bottom -->
+    <footer class="bg-jade-950 text-parchment-200 py-10 border-t border-amber-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+            <div class="text-center sm:text-left">
+                <p class="font-serif text-lg font-bold text-parchment-50">TÁC ĐỘNG CỘT SỐNG Y HỌC CỔ TRUYỀN VIỆT NAM</p>
+                <p class="text-parchment-200/70 mt-1">Gìn giữ & phát huy di sản Cố Lương y Nguyễn Tham Tán • Tên miền: yhct-tđcs.vn</p>
+            </div>
+            <div class="text-center sm:text-right text-parchment-200/70">
+                <p>© 2026 Tác Động Cột Sống YHCT Việt Nam.</p>
+                <p class="mt-0.5">Nội dung mang tính chất tham khảo giáo dục sức khỏe.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+    <!-- ==================== STICKY QUICK ACTION BAR (MOBILE & DESKTOP) ==================== -->
+    <div class="fixed bottom-0 inset-x-0 z-40 md:inset-x-auto md:bottom-6 md:right-6 bg-jade-950/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none border-t md:border-none border-amber-500/30 p-2.5 md:p-0">
+        <div class="max-w-md mx-auto grid grid-cols-3 md:flex md:flex-col gap-2.5">
+            <!-- Zalo Button -->
+            <a href="#dat-lich" class="flex items-center justify-center gap-2 px-3 py-2.5 md:px-4 md:py-3 rounded-xl md:rounded-full bg-[#0068FF] hover:bg-[#0055D4] text-white text-xs sm:text-sm font-semibold shadow-lg transition-transform hover:scale-105">
+                <span class="font-bold tracking-tight">Zalo</span>
+                <span>Chat Tư Vấn</span>
+            </a>
+            <!-- Call Hotline Button -->
+            <a href="#lien-he" class="flex items-center justify-center gap-2 px-3 py-2.5 md:px-4 md:py-3 rounded-xl md:rounded-full bg-amber-600 hover:bg-amber-700 text-parchment-50 text-xs sm:text-sm font-semibold shadow-lg transition-transform hover:scale-105">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <span>Gọi Hotline</span>
+            </a>
+            <!-- Quick Book Button -->
+            <a href="#dat-lich" class="flex items-center justify-center gap-2 px-3 py-2.5 md:px-4 md:py-3 rounded-xl md:rounded-full bg-jade-900 hover:bg-jade-800 text-parchment-50 border border-amber-400/50 text-xs sm:text-sm font-semibold shadow-lg transition-transform hover:scale-105">
+                <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                <span>Đặt Lịch</span>
+            </a>
+        </div>
+    </div>
 
-        // Form validation and submission
-        const bookingForm = document.getElementById('bookingForm');
-        
-        bookingForm.addEventListener('submit', async function(event) {
-            event.preventDefault();
-            
-            // Clear previous error messages
-            document.querySelectorAll('.error-message').forEach(msg => msg.classList.add('hidden'));
-            
-            const formData = {
-                fullName: document.getElementById('fullName').value.trim(),
-                phone: document.getElementById('phone').value.trim(),
-                appointmentDate: document.getElementById('appointmentDate').value,
-                condition: document.getElementById('condition').value
-            };
-            
-            // Validation
-            let isValid = true;
-            
-            if (!formData.fullName) {
-                showError('fullName', 'Vui lòng nhập họ và tên');
-                isValid = false;
-            }
-            
-            if (!formData.phone || !/^[0-9]{10,11}$/.test(formData.phone)) {
-                showError('phone', 'Vui lòng nhập số điện thoại hợp lệ (10-11 số)');
-                isValid = false;
-            }
-            
-            if (!isValid) return;
-            
-            // Submit form (thay YOUR_BACKEND_URL với URL backend thực)
-            try {
-                const submitBtn = event.target.querySelector('button[type="submit"]');
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Đang gửi...';
-                
-                // Simulate form submission
-                // const response = await fetch('YOUR_BACKEND_URL/book-appointment', {
-                //     method: 'POST',
-                //     headers: { 'Content-Type': 'application/json' },
-                //     body: JSON.stringify(formData)
-                // });
-                
-                // if (response.ok) {
-                alert('✓ Đã ghi nhận thông tin! Đội ngũ tư vấn sẽ liên hệ lại với bạn trong thời gian sớm nhất.');
-                bookingForm.reset();
-                // }
-                
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'XÁC NHẬN ĐẶT LỊCH HẸN';
-            } catch (error) {
-                alert('Có lỗi xảy ra. Vui lòng thử lại hoặc gọi trực tiếp: 0898 765 865');
-                event.target.querySelector('button[type="submit"]').disabled = false;
-            }
+    <!-- ==================== ARTICLE READER MODAL ==================== -->
+    <div id="article-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-jade-950/75 backdrop-blur-sm">
+        <div class="bg-parchment-50 rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto border border-amber-600/30 shadow-2xl p-6 sm:p-8 relative">
+            <button id="close-modal-btn" aria-label="Đóng bài viết" class="sticky top-0 float-right w-9 h-9 rounded-full bg-parchment-200 hover:bg-amber-600 hover:text-white flex items-center justify-center text-ink-900 transition-colors">
+                ✕
+            </button>
+            <span id="modal-category" class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold mb-3"></span>
+            <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-jade-900 mb-4 leading-snug"></h3>
+            <div id="modal-body" class="space-y-4 text-sm sm:text-base text-ink-700 leading-relaxed"></div>
+            <div class="mt-8 pt-5 border-t border-amber-600/20 flex flex-wrap items-center justify-between gap-3">
+                <span class="text-xs text-ink-500">Nguồn: Thư viện Tác Động Cột Sống YHCT Việt Nam</span>
+                <a href="#dat-lich" id="modal-cta-btn" class="px-5 py-2.5 rounded-full bg-jade-900 text-parchment-50 text-xs sm:text-sm font-semibold">
+                    Đặt Lịch Tư Vấn Với Lương Y
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT INTERACTIVITY ==================== -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-        
-        function showError(fieldId, message) {
-            const field = document.getElementById(fieldId);
-            const errorElement = field.nextElementSibling;
-            if (errorElement && errorElement.classList.contains('error-message')) {
-                errorElement.textContent = message;
-                errorElement.classList.remove('hidden');
-            }
-        }
-        
-        // Scroll to form on CTA click - smooth behavior already in CSS
-        document.querySelectorAll('a[href="#dat-lich"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.getElementById('dat-lich').scrollIntoView({ behavior: 'smooth' });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
             });
+        });
+
+        // 2. Interactive Spine Explorer Data & Logic
+        const spineData = {
+            cervical: {
+                tag: 'Phân Đoạn C1 – C7 • Khu Vực Đầu Mặt Cổ & Chi Trên',
+                title: 'Đốt Sống Cổ (C1 – C7)',
+                summary: 'Vùng cổ có biên độ vận động lớn nhất nhưng cấu trúc đốt sống nhỏ, dễ bị biến đổi lớp cơ do thói quen cúi nhìn điện thoại, ngồi máy tính sai tư thế hoặc nhiễm lạnh vùng gáy.',
+                symptoms: [
+                    'Đau mỏi cổ vai gáy, cứng cổ khó xoay trở khi ngủ dậy',
+                    'Đau đầu vùng chẩm gáy, hoa mắt, chóng mặt, rối loạn tiền đình',
+                    'Tê bì lan xuống bả vai, cánh tay và các ngón tay',
+                    'Mất ngủ kéo dài, giảm khả năng tập trung do tuần hoàn lên não kém'
+                ],
+                muscleChange: 'Thường xuất hiện các dải cơ co cứng, xơ sợi dọc cơ thang và cơ cạnh sống cổ (C1–C3, C5–C7). Nhiệt độ vùng gáy có thể tăng cục bộ (khi viêm cấp) hoặc lạnh (khi bế tắc mãn tính).',
+                approach: 'Dùng phần mềm đầu ngón tay thực hiện thủ thuật bật, rung, miết nhẹ nhàng để làm mềm lớp cơ co thắt quanh trọng điểm, giải phóng áp lực lên động mạch đốt sống và rễ thần kinh cánh tay.'
+            },
+            thoracic: {
+                tag: 'Phân Đoạn T1 – T12 • Khu Vực Lưng Giữa & Nội Tạng',
+                title: 'Đốt Sống Ngực (T1 – T12)',
+                summary: 'Hệ đốt sống ngực liên kết chặt chẽ với khung xương sườn và hệ thần kinh thực vật chi phối hoạt động của tim, phổi, dạ dày, gan mật.',
+                symptoms: [
+                    'Đau nhức vùng giữa hai bả vai, đau tức lan ra phía trước ngực',
+                    'Cảm giác hụt hơi, khó thở sâu khi mệt mỏi hoặc căng thẳng',
+                    'Đầy hơi, trào ngược dạ dày, rối loạn tiêu hóa liên quan trọng điểm T5–T9',
+                    'Gù lưng nhẹ, mỏi lưng khi đứng hoặc ngồi thẳng lâu'
+                ],
+                muscleChange: 'Lớp cơ dựng sống vùng T3–T8 thường dày cứng thành từng cục (trọng điểm), đốt sống có xu hướng lồi nhẹ hoặc lệch sang một bên.',
+                approach: 'Thăm khám định vị chính xác các đốt sống có biến đổi nhiệt độ bất thường, giải tỏa trọng điểm bằng thủ thuật đẩy và xoay phần mềm giúp điều hòa khí huyết và thần kinh thực vật.'
+            },
+            lumbar: {
+                tag: 'Phân Đoạn L1 – L5 • Trụ Cột Nâng Đỡ Toàn Thân',
+                title: 'Đốt Sống Thắt Lưng (L1 – L5)',
+                summary: 'Thắt lưng là nơi chịu toàn bộ trọng lực của nửa thân trên. Đây là khu vực có tỷ lệ thoát vị đĩa đệm, thoái hóa và đau thần kinh tọa cao nhất.',
+                symptoms: [
+                    'Đau âm ỉ hoặc đau nhói vùng thắt lưng, tăng lên khi cúi, mang vác',
+                    'Đau lan từ thắt lưng xuống mông, mặt sau đùi, bắp chân (Đau thần kinh tọa)',
+                    'Tê bì bàn chân, teo cơ nhẹ nếu chèn ép rễ thần kinh kéo dài',
+                    'Sáng ngủ dậy lưng cứng đờ, phải vận động một lúc mới thẳng người được'
+                ],
+                muscleChange: 'Nhóm cơ thắt lưng chậu và cơ cạnh sống L4–L5, L5–S1 co rút mạnh để "bảo vệ" vùng đĩa đệm tổn thương, vô tình làm tăng áp lực ép lên đĩa đệm.',
+                approach: 'Giải tỏa lớp cơ co cứng tầng sâu quanh L3–L5, tạo khoảng không sinh lý để đĩa đệm giảm áp lực chèn ép và từng bước phục hồi độ đàn hồi tự nhiên.'
+            },
+            sacral: {
+                tag: 'Phân Đoạn S1 – S5 • Vùng Chậu Hông & Chi Dưới',
+                title: 'Xương Cùng Cụt (S1 – S5)',
+                summary: 'Xương cùng cụt đóng vai trò nền móng giữ thăng bằng cho khung chậu và liên quan mật thiết đến hệ tiết niệu, sinh dục và vùng khớp háng.',
+                symptoms: [
+                    'Đau nhức vùng xương cụt khi ngồi trên ghế cứng hoặc đứng lên đột ngột',
+                    'Đau mỏi vùng khớp cùng chậu, lan sang hai bên hông',
+                    'Lạnh vùng thắt lưng dưới và hai bàn chân',
+                    'Rối loạn tiểu tiện nhẹ ở người lớn tuổi do suy giảm chức năng thần kinh vùng chậu'
+                ],
+                muscleChange: 'Cơ hình lê và các dây chằng vùng cùng chậu bị căng cứng, lệch cân bằng khung chậu sau chấn thương ngã ngồi hoặc sinh nở.',
+                approach: 'Tác động phần mềm điều chỉnh cân bằng cơ vùng cùng chậu, làm ấm vùng mệnh môn – thắt lưng dưới, khơi thông tuần hoàn chi dưới.'
+            }
+        };
+
+        const spineDetailContainer = document.getElementById('spine-detail-content');
+        const zoneButtons = document.querySelectorAll('.zone-btn');
+        const svgZones = document.querySelectorAll('.spine-zone');
+
+        function renderSpineDetail(zoneKey) {
+            const data = spineData[zoneKey];
+            if (!data) return;
+
+            spineDetailContainer.innerHTML = `
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold mb-3">
+                        ${data.tag}
+                    </span>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-jade-900">
+                        ${data.title}
+                    </h3>
+                    <p class="text-sm sm:text-base text-ink-700 leading-relaxed mt-3">
+                        ${data.summary}
+                    </p>
+                </div>
+
+                <div class="bg-parchment-100 rounded-2xl p-5 border border-amber-600/20">
+                    <h4 class="font-serif text-xl font-bold text-jade-900 mb-3 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                        <span>Triệu chứng lâm sàng thường gặp</span>
+                    </h4>
+                    <ul class="grid sm:grid-cols-2 gap-2.5 text-sm text-ink-900">
+                        ${data.symptoms.map(item => `
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-600 font-bold mt-0.5">✓</span>
+                                <span>${item}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-2xl bg-jade-50 border border-jade-900/15">
+                        <p class="text-xs font-bold uppercase tracking-wider text-jade-900 mb-1.5">Biến Đổi Lớp Cơ & Nhiệt Độ</p>
+                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">${data.muscleChange}</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-600/20">
+                        <p class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1.5">Hướng Tác Động Trị Liệu</p>
+                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">${data.approach}</p>
+                    </div>
+                </div>
+            `;
+
+            // Update active button state
+            zoneButtons.forEach(btn => {
+                if (btn.dataset.zone === zoneKey) {
+                    btn.classList.remove('bg-jade-800/80', 'text-parchment-200', 'border-amber-400/20');
+                    btn.classList.add('bg-amber-600', 'text-parchment-50', 'border-amber-400');
+                } else {
+                    btn.classList.add('bg-jade-800/80', 'text-parchment-200', 'border-amber-400/20');
+                    btn.classList.remove('bg-amber-600', 'text-parchment-50', 'border-amber-400');
+                }
+            });
+
+            // Update active SVG state
+            svgZones.forEach(g => {
+                if (g.dataset.zone === zoneKey) {
+                    g.classList.add('active');
+                } else {
+                    g.classList.remove('active');
+                }
+            });
+        }
+
+        zoneButtons.forEach(btn => {
+            btn.addEventListener('click', () => renderSpineDetail(btn.dataset.zone));
+        });
+
+        svgZones.forEach(g => {
+            g.addEventListener('click', () => renderSpineDetail(g.dataset.zone));
+        });
+
+        // Initial render
+        renderSpineDetail('cervical');
+
+        // 3. Interactive Health Check Quiz Logic
+        const quizForm = document.getElementById('health-quiz-form');
+        const quizErrorMsg = document.getElementById('quiz-error-msg');
+        const quizResultBox = document.getElementById('quiz-result-box');
+        const resultHeadline = document.getElementById('result-headline');
+        const resultAnalysis = document.getElementById('result-analysis');
+        const resultDurationBadge = document.getElementById('result-duration-badge');
+
+        quizForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const checkedBoxes = Array.from(document.querySelectorAll('input[name="symptom"]:checked')).map(cb => cb.value);
+            const duration = document.querySelector('input[name="duration"]:checked').value;
+
+            if (checkedBoxes.length === 0) {
+                quizErrorMsg.classList.remove('hidden');
+                quizResultBox.classList.add('hidden');
+                return;
+            }
+
+            quizErrorMsg.classList.add('hidden');
+
+            // Analyze selected zones
+            const areas = [];
+            if (checkedBoxes.includes('neck') || checkedBoxes.includes('head') || checkedBoxes.includes('arm_numb')) {
+                areas.push('Vùng Cột Sống Cổ (C1 – C7)');
+            }
+            if (checkedBoxes.includes('thoracic')) {
+                areas.push('Vùng Cột Sống Ngực (T1 – T12)');
+            }
+            if (checkedBoxes.includes('lumbar') || checkedBoxes.includes('sciatica')) {
+                areas.push('Vùng Cột Sống Thắt Lưng (L1 – L5)');
+            }
+
+            resultDurationBadge.textContent = `Thời gian: ${duration}`;
+            resultHeadline.textContent = `Dấu hiệu tập trung tại: ${areas.join(' & ')}`;
+
+            let advice = `Qua các triệu chứng bạn lựa chọn (${checkedBoxes.length} biểu hiện), hệ cơ cạnh sống tại ${areas.join(' và ')} đang có xu hướng co cứng bảo vệ, gây cản trở lưu thông khí huyết và tạo áp lực lên rễ thần kinh. `;
+
+            if (checkedBoxes.includes('arm_numb') || checkedBoxes.includes('sciatica')) {
+                advice += `Đặc biệt, dấu hiệu tê bì hoặc đau lan theo đường đi dây thần kinh cho thấy trọng điểm đang chèn ép rễ thần kinh ngoại biên. Bạn nên thăm khám sớm để giải tỏa lớp cơ tầng sâu trước khi xuất hiện biến đổi cấu trúc đĩa đệm nặng hơn.`;
+            } else {
+                advice += `Ở giai đoạn này, việc thăm khám 4 đặc trưng và giải tỏa trọng điểm bằng phần mềm đầu ngón tay kết hợp điều chỉnh tư thế sinh hoạt sẽ giúp cơ thể tự lập lại cân bằng rất hiệu quả mà không cần dùng thuốc.`;
+            }
+
+            resultAnalysis.textContent = advice;
+            quizResultBox.classList.remove('hidden');
+            quizResultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Lead capture inside quiz result
+        const quizLeadForm = document.getElementById('quiz-lead-form');
+        const quizLeadSuccess = document.getElementById('quiz-lead-success');
+
+        quizLeadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            quizLeadSuccess.classList.remove('hidden');
+            quizLeadForm.reset();
+        });
+
+        // 4. Knowledge Articles Modal
+        const articles = [
+            {
+                category: 'Cơ Chế Trị Liệu',
+                title: 'Cơ chế tự phục hồi của đĩa đệm khi không dùng thuốc',
+                paragraphs: [
+                    'Ở người trưởng thành, đĩa đệm cột sống là cấu trúc vô mạch (không có mạch máu nuôi dưỡng trực tiếp). Nguồn dưỡng chất và oxy đi vào đĩa đệm hoàn toàn nhờ cơ chế thẩm thấu qua mâm sụn đốt sống khi cột sống vận động nhịp nhàng.',
+                    'Khi cơ thể bị stress, ngồi sai tư thế hoặc nhiễm lạnh, các nhóm cơ cạnh sống sẽ co rút lại (biến đổi lớp cơ). Sự co cứng kéo dài này giống như một chiếc kìm ép chặt hai đốt sống lại với nhau, khiến đĩa đệm bị mất nước, xẹp dần và phình lồi ra ngoài.',
+                    'Phương pháp Tác Động Cột Sống Việt Nam giải quyết tận gốc cơ chế này bằng cách dùng phần mềm đầu ngón tay làm mềm các lớp cơ co cứng tại trọng điểm. Khi cơ mềm ra, khoảng cách giữa hai đốt sống được giải phóng, quá trình thẩm thấu dinh dưỡng của đĩa đệm được khôi phục tự nhiên.'
+                ]
+            },
+            {
+                category: 'Dưỡng Sinh Tại Nhà',
+                title: 'Bài tập 5 phút giải tỏa mỏi cổ vai gáy cho dân văn phòng',
+                paragraphs: [
+                    '1. Động tác Thu Cằm (Chin Tuck - 10 lần): Ngồi thẳng lưng, mắt nhìn thẳng. Từ từ kéo nhẹ cằm lùi về phía sau (như tạo cằm đôi) sao cho gáy được kéo giãn thẳng trục. Giữ 5 giây rồi thả lỏng. Động tác này giúp giảm tải tức thì cho đốt sống C1–C3.',
+                    '2. Xoay Mở Khớp Vai Kết Hợp Hít Thở Sâu (10 vòng): Đặt các đầu ngón tay lên mỏm vai, hít sâu bằng mũi khi xoay khuỷu tay mở rộng lồng ngực ra sau, thở chậm bằng miệng khi hạ tay xuống. Giúp giải tỏa cơ thang và cơ trám vùng T1–T5.',
+                    '3. Giữ Ấm Vùng Đại Chùy (C7–T1): Tránh để luồng gió điều hòa thổi trực tiếp vào sau gáy. Buổi tối có thể chườm ấm vùng cổ vai 10–15 phút để tăng cường tuần hoàn ngoại vi.'
+                ]
+            },
+            {
+                category: 'Kiến Thức Chuẩn Xác',
+                title: 'Phân biệt Tác Động Cột Sống Việt Nam và nắn chỉnh bẻ khớp',
+                paragraphs: [
+                    'Trong trị liệu cột sống hiện nay, nhiều người thường đánh đồng mọi phương pháp dùng tay đều là "bẻ khớp" tạo tiếng kêu rắc. Tuy nhiên, Tác Động Cột Sống của Cố Lương y Nguyễn Tham Tán có nguyên lý hoàn toàn khác biệt.',
+                    'Thứ nhất về chẩn đoán: Tác Động Cột Sống không chỉ nhìn phim chụp mà khám trực tiếp bằng xúc giác trên da để tìm sự đồng bộ của 4 đặc trưng: Đốt sống – Lớp cơ – Nhiệt độ – Cảm giác.',
+                    'Thứ hai về thủ thuật: Người thầy thuốc chỉ tác động bằng phần mềm đầu ngón tay lên các điểm cơ co cứng (trọng điểm) với lực định lượng vừa đủ. Khi cơ mềm và nhiệt độ vùng da cân bằng trở lại, đốt sống tự động trở về vị trí sinh lý mà không cần bất kỳ động tác vặn bẻ đột ngột nào, đảm bảo an toàn cao cho cả người cao tuổi.'
+                ]
+            }
+        ];
+
+        const articleModal = document.getElementById('article-modal');
+        const modalCategory = document.getElementById('modal-category');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const modalCtaBtn = document.getElementById('modal-cta-btn');
+
+        document.querySelectorAll('.open-article-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const idx = parseInt(btn.dataset.article, 10);
+                const art = articles[idx];
+                if (!art) return;
+
+                modalCategory.textContent = art.category;
+                modalTitle.textContent = art.title;
+                modalBody.innerHTML = art.paragraphs.map(p => `<p>${p}</p>`).join('');
+
+                articleModal.classList.remove('hidden');
+                articleModal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeArticleModal() {
+            articleModal.classList.add('hidden');
+            articleModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        closeModalBtn.addEventListener('click', closeArticleModal);
+        modalCtaBtn.addEventListener('click', closeArticleModal);
+        articleModal.addEventListener('click', (e) => {
+            if (e.target === articleModal) closeArticleModal();
+        });
+
+        // 5. Direct Appointment Booking Form
+        const bookingForm = document.getElementById('booking-form');
+        const bookingSuccessBox = document.getElementById('booking-success-box');
+        const bookingSummaryText = document.getElementById('booking-summary-text');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('book-name').value.trim();
+            const phone = document.getElementById('book-phone').value.trim();
+            const date = document.getElementById('book-date').value;
+            const area = document.getElementById('book-area').value;
+
+            const dateStr = date ? `vào ngày <strong>${date}</strong>` : 'trong thời gian sớm nhất';
+            bookingSummaryText.innerHTML = `Cảm ơn <strong>${name}</strong> (${phone}). Phòng khám đã tiếp nhận yêu cầu tư vấn về <strong>${area}</strong> ${dateStr} và sẽ liên hệ xác nhận khung giờ khám tại Thôn Đoài, Phúc Thịnh.`;
+
+            bookingSuccessBox.classList.remove('hidden');
+            bookingForm.reset();
         });
     </script>
 </body>
