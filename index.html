@@ -18,10 +18,9 @@
             theme: {
                 extend: {
                     colors: {
-                        // Bảng màu phong thủy Đại Lâm Mộc (1988): Mộc sinh Hỏa, Thủy sinh Mộc
                         jade: {
-                            950: '#0A2118', // Thủy thâm trầm nuôi dưỡng Mộc
-                            900: '#1B4332', // Đại Lâm Mộc - Xanh rừng ngọc bích chủ đạo
+                            950: '#0A2118',
+                            900: '#1B4332',
                             800: '#24553F',
                             700: '#2D6A4F',
                             600: '#40916C',
@@ -30,7 +29,7 @@
                         },
                         gold: {
                             700: '#9A7418',
-                            600: '#C59B27', // Vàng đồng ánh kim sang trọng y học
+                            600: '#C59B27',
                             500: '#D4AF37',
                             400: '#E3C565',
                             100: '#FBF5E4',
@@ -38,12 +37,12 @@
                         },
                         cinnabar: {
                             800: '#78191C',
-                            700: '#9B2226', // Đỏ Chu Sa trầm (Hành Hỏa - Mộc sinh Hỏa)
+                            700: '#9B2226',
                             100: '#FBEAEA'
                         },
                         silk: {
                             50:  '#FDFCFA',
-                            100: '#FAF8F3', // Giấy Xuyến Chỉ / Lụa Sáng ấm áp
+                            100: '#FAF8F3',
                             200: '#F2EDE1',
                             300: '#E5DEC9'
                         },
@@ -62,7 +61,6 @@
         }
     </script>
     <style>
-        /* Thanh cuộn tinh tế */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -77,13 +75,11 @@
             background: #1B4332;
         }
 
-        /* Hoa văn nền chìm Âm Dương - Ngũ Hành & Vân Mây Phương Đông */
         .bg-yinyang-wuxing {
             background-color: #FAF8F3;
             background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%231B4332' stroke-opacity='0.045' stroke-width='1'%3E%3Ccircle cx='80' cy='80' r='64'/%3E%3Ccircle cx='80' cy='80' r='48' stroke='%23C59B27' stroke-opacity='0.07' stroke-dasharray='4 4'/%3E%3Cpath d='M80 16 A64 64 0 0 1 80 144 A32 32 0 0 1 80 80 A32 32 0 0 0 80 16 Z'/%3E%3Ccircle cx='80' cy='48' r='6'/%3E%3Ccircle cx='80' cy='112' r='6'/%3E%3Cpolygon points='80,22 135,62 114,127 46,127 25,62' stroke='%239B2226' stroke-opacity='0.035'/%3E%3C/g%3E%3C/svg%3E");
         }
 
-        /* Khung viền triện Á Đông */
         .eastern-frame {
             position: relative;
         }
@@ -95,51 +91,26 @@
             border-radius: inherit;
             pointer-events: none;
         }
-
-        /* Hiệu ứng nhịp thở Thái Cực */
-        @keyframes breathSlow {
-            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
-            50% { transform: scale(1.03) rotate(3deg); opacity: 1; }
-        }
-        .animate-breath {
-            animation: breathSlow 8s ease-in-out infinite;
-        }
-
-        /* Hiệu ứng mở rộng mượt cho bảng tra cứu đốt sống */
-        .accordion-content {
-            transition: all 0.3s ease-in-out;
-        }
     </style>
 </head>
 <body class="bg-yinyang-wuxing text-ink-900 font-sans antialiased selection:bg-jade-900 selection:text-silk-100 pb-20 md:pb-0">
 
-    <!-- ==================== 1. HEADER & LOGO ĐỘC QUYỀN (PHONG THỦY ĐẠI LÂM MỘC) ==================== -->
+    <!-- ==================== 1. HEADER & LOGO ĐỘC QUYỀN ==================== -->
     <header id="navbar" class="sticky top-0 z-40 bg-silk-100/95 backdrop-blur-md border-b border-gold-600/25 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20 sm:h-22">
-                <!-- Logo Thương Hiệu Lâu Dài (TĐCS & Chăm Sóc Da Dưỡng Sinh) -->
                 <a href="#" class="flex items-center gap-3 sm:gap-4 group">
-                    <!-- Custom Vector Logo SVG: Vòng Thái Cực + Ngũ Hành + Trục Cột Sống Mộc + Lá Ngọc Bích Dưỡng Sinh -->
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-jade-900 via-jade-950 to-jade-800 flex items-center justify-center shadow-md border border-gold-500/50 group-hover:shadow-gold-500/20 transition-all shrink-0">
                         <svg class="w-10 h-10 sm:w-11 sm:h-11" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Vòng tròn Ngũ Hành ngoài cùng (Vàng Đồng) -->
                             <circle cx="32" cy="32" r="28" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.85"/>
-                            <!-- 5 điểm Ngũ Hành (Kim - Mộc - Thủy - Hỏa - Thổ) -->
                             <circle cx="32" cy="4" r="1.8" fill="#E3C565"/>
                             <circle cx="58.6" cy="23.4" r="1.8" fill="#52B788"/>
                             <circle cx="48.5" cy="54.6" r="1.8" fill="#9B2226"/>
                             <circle cx="15.5" cy="54.6" r="1.8" fill="#D4AF37"/>
                             <circle cx="5.4" cy="23.4" r="1.8" fill="#74C69D"/>
-                            
-                            <!-- Đường cong Thái Cực Âm Dương mềm mại -->
                             <path d="M32 8 C45.255 8 56 18.745 56 32 C56 45.255 45.255 56 32 56 C38.627 56 44 50.627 44 44 C44 37.373 38.627 32 32 32 C25.373 32 20 26.627 20 20 C20 13.373 25.373 8 32 8 Z" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.45"/>
-
-                            <!-- Chiếc lá Thảo Dược / Ngọc Bích ôm lấy trục (Biểu trưng Chăm sóc da & Dưỡng sinh) -->
                             <path d="M32 51 C21 44 17 31 23 19 C26 14 30 11 32 10 C34 11 38 14 41 19 C47 31 43 44 32 51 Z" fill="#2D6A4F" fill-opacity="0.55" stroke="#74C69D" stroke-width="1.2"/>
-
-                            <!-- Trục Cột Sống vươn thẳng (Hành Mộc - Vững chãi & Cân bằng) -->
                             <line x1="32" y1="12" x2="32" y2="52" stroke="#FAF8F3" stroke-width="1.6" stroke-linecap="round"/>
-                            <!-- Các đốt sống cách điệu như mầm cây & ngọc bích -->
                             <rect x="28.5" y="15" width="7" height="3.2" rx="1.6" fill="#E3C565"/>
                             <rect x="27.5" y="21" width="9" height="3.5" rx="1.75" fill="#FAF8F3"/>
                             <rect x="27" y="27.5" width="10" height="3.8" rx="1.9" fill="#E3C565"/>
@@ -158,7 +129,6 @@
                     </div>
                 </a>
 
-                <!-- Desktop Menu -->
                 <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-medium text-ink-700">
                     <a href="#nen-tang-y-khoa" class="hover:text-jade-900 transition-colors py-2">Nền Tảng & Dẫn Chứng</a>
                     <a href="#tu-lieu-lam-sang" class="hover:text-jade-900 transition-colors py-2">Tư Liệu Lâm Sàng</a>
@@ -167,11 +137,10 @@
                         <span>Đánh Giá Triệu Chứng</span>
                         <span class="px-2 py-0.5 text-[10px] font-bold bg-cinnabar-700 text-silk-50 rounded-full">Chi tiết</span>
                     </a>
-                    <a href="#thu-vien-kien-thuc" class="hover:text-jade-900 transition-colors py-2">Kiến Thức & Hồi Phục</a>
+                    <a href="#thu-vien-kien-thuc" class="hover:text-jade-900 transition-colors py-2">Kho Tài Liệu</a>
                     <a href="#lich-lam-viec" class="hover:text-jade-900 transition-colors py-2">Lịch Làm Việc</a>
                 </nav>
 
-                <!-- Zalo Direct CTA & Mobile Menu Toggle (Số điện thoại đơn giản, chân phương) -->
                 <div class="flex items-center gap-3">
                     <div class="hidden sm:flex items-center gap-3 text-sm">
                         <a href="tel:0898765865" class="font-semibold text-jade-900 hover:text-cinnabar-700 transition-colors">
@@ -183,7 +152,6 @@
                         </a>
                     </div>
 
-                    <!-- Mobile Menu Button -->
                     <button id="mobile-menu-btn" aria-label="Mở danh mục" class="lg:hidden p-2.5 rounded-xl text-jade-900 hover:bg-silk-200 border border-gold-600/20 transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -193,13 +161,12 @@
             </div>
         </div>
 
-        <!-- Mobile Dropdown Navigation -->
         <div id="mobile-menu" class="hidden lg:hidden bg-silk-50 border-b border-gold-600/25 px-4 pt-2 pb-6 space-y-2 shadow-xl">
             <a href="#nen-tang-y-khoa" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-ink-900 hover:bg-silk-200">1. Nền Tảng Y Khoa & Dẫn Chứng Bộ Y Tế</a>
             <a href="#tu-lieu-lam-sang" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-ink-900 hover:bg-silk-200">2. Tư Liệu Lâm Sàng & Đội Ngũ Y Sỹ</a>
             <a href="#bang-tra-cuu" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-ink-900 hover:bg-silk-200">3. Bảng Tra Cứu Đốt Sống (Thu gọn / Chi tiết)</a>
             <a href="#danh-gia-trieu-chung" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-jade-900 bg-jade-50 border border-jade-900/15">4. Công Cụ Đánh Giá Triệu Chứng Đa Bệnh Lý</a>
-            <a href="#thu-vien-kien-thuc" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-ink-900 hover:bg-silk-200">5. Thư Viện Kiến Thức & Phục Hồi</a>
+            <a href="#thu-vien-kien-thuc" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-ink-900 hover:bg-silk-200">5. Kho Tài Liệu Chuyên Sâu & Phục Hồi</a>
             <a href="#lich-lam-viec" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-ink-900 hover:bg-silk-200">6. Lịch Làm Việc & Địa Chỉ Phúc Thịnh</a>
             <div class="pt-2 flex items-center justify-between px-4 py-3 rounded-xl bg-silk-200/70 text-sm">
                 <span class="font-semibold text-jade-900">SĐT / Zalo: 0898 765 865</span>
@@ -210,18 +177,15 @@
         </div>
     </header>
 
-    <!-- ==================== 2. HERO SECTION: ÂM DƯƠNG CÂN BẰNG & CHÂN DUNG Y SỸ ==================== -->
+    <!-- ==================== 2. HERO SECTION ==================== -->
     <section class="relative overflow-hidden pt-10 pb-16 sm:pt-14 sm:pb-20 border-b border-gold-600/25">
-        <!-- Hào quang Ngũ Hành nhẹ nhàng -->
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-jade-600/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-gold-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                 
-                <!-- Left Content (7 cols) -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <!-- Badge Chuẩn Y Khoa -->
                     <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-4 py-1.5 rounded-full bg-jade-900/10 border border-jade-900/20 text-jade-900 text-xs font-semibold tracking-wide">
                         <span class="w-2 h-2 rounded-full bg-cinnabar-700"></span>
                         <span>QUY TRÌNH KỸ THUẬT BỘ Y TẾ • GIÁO TRÌNH HV Y DƯỢC HỌC CỔ TRUYỀN VN</span>
@@ -235,7 +199,6 @@
                         Kế thừa phương pháp <strong>Tác Động Cột Sống Việt Nam</strong> của Cố Lương y <strong>Nguyễn Tham Tán</strong> và tài liệu đào tạo chính quy tại <strong>Bệnh viện Tuệ Tĩnh</strong>. Dùng phần mềm đầu ngón tay chẩn trị qua 4 đặc trưng, giúp giải tỏa chèn ép thần kinh và nuôi dưỡng sắc diện tự nhiên không dùng thuốc.
                     </p>
 
-                    <!-- Action Buttons -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                         <a href="#danh-gia-trieu-chung" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-jade-900 hover:bg-jade-800 text-silk-50 font-semibold text-sm sm:text-base shadow-lg shadow-jade-900/20 transition-all border border-gold-500/40">
                             <span>Tự Đánh Giá Triệu Chứng Online</span>
@@ -243,15 +206,14 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                             </svg>
                         </a>
-                        <a href="#bang-tra-cuu" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-silk-50 hover:bg-silk-200 text-jade-900 font-semibold text-sm sm:text-base border border-jade-900/25 transition-all">
+                        <a href="#thu-vien-kien-thuc" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-silk-50 hover:bg-silk-200 text-jade-900 font-semibold text-sm sm:text-base border border-jade-900/25 transition-all">
                             <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                             </svg>
-                            <span>Bảng Tra Cứu Đốt Sống</span>
+                            <span>Kho Tài Liệu Chuyên Môn</span>
                         </a>
                     </div>
 
-                    <!-- 3 Trụ Cột Chuyên Môn -->
                     <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-gold-600/25">
                         <div class="text-center lg:text-left">
                             <p class="font-serif text-xl sm:text-2xl font-bold text-jade-900">4 Đặc Trưng</p>
@@ -268,7 +230,6 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Chân Dung Y Sỹ Nguyễn Hải Bằng Tại Học Viện Y Dược Học Cổ Truyền VN (5 cols) -->
                 <div class="lg:col-span-5">
                     <div class="bg-jade-900 rounded-3xl p-5 sm:p-6 shadow-2xl eastern-frame text-silk-100 space-y-4">
                         <div class="flex items-center justify-between border-b border-gold-500/25 pb-3">
@@ -281,7 +242,6 @@
                             </span>
                         </div>
 
-                        <!-- Ảnh chân dung Y sỹ Nguyễn Hải Bằng trước tượng Đại danh y Tuệ Tĩnh -->
                         <div class="relative rounded-2xl overflow-hidden border border-gold-500/35 bg-jade-950 cursor-pointer" onclick="openImageLightbox(this.querySelector('img').src, 'Y sỹ YHCT Nguyễn Hải Bằng trước tượng Đại danh y Tuệ Tĩnh – Học viện Y Dược học Cổ truyền Việt Nam')">
                             <img 
                                 src="ysy-nguyen-hai-bang.jpg" 
@@ -296,7 +256,6 @@
                             </div>
                         </div>
 
-                        <!-- Thẻ trích dẫn nguồn chính thống -->
                         <div class="bg-jade-950/70 rounded-2xl p-4 border border-gold-500/20 text-xs space-y-1.5">
                             <p class="text-gold-400 font-semibold uppercase tracking-wider">Định hướng kế thừa & thực hành:</p>
                             <p class="text-silk-200 leading-relaxed">
@@ -313,7 +272,7 @@
         </div>
     </section>
 
-    <!-- ==================== 3. NỀN TẢNG Y KHOA, THUYẾT ÂM DƯƠNG NGŨ HÀNH & GIẢI PHẪU ==================== -->
+    <!-- ==================== 3. NỀN TẢNG Y KHOA & THUYẾT ÂM DƯƠNG NGŨ HÀNH ==================== -->
     <section id="nen-tang-y-khoa" class="py-16 sm:py-24 border-b border-gold-600/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -327,9 +286,7 @@
                 </p>
             </div>
 
-            <!-- Grid 2 cột: Sơ đồ giải phẫu động mạch & đốt sống cổ C1-C7 + 4 Đặc trưng chẩn bệnh -->
             <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-12">
-                <!-- Cột trái: Sơ đồ giải phẫu đốt sống cổ C1-C7 & Động mạch sống (5 cols) -->
                 <div class="lg:col-span-5 bg-silk-50 rounded-3xl p-6 border border-gold-600/30 shadow-md flex flex-col justify-between">
                     <div>
                         <span class="inline-block px-3 py-1 rounded-full bg-jade-100 text-jade-900 text-xs font-semibold mb-3">
@@ -357,9 +314,7 @@
                     </div>
                 </div>
 
-                <!-- Cột phải: 4 Đặc Trưng Chẩn Bệnh & Triết lý Ngũ Hành Dưỡng Sinh (7 cols) -->
                 <div class="lg:col-span-7 flex flex-col justify-between gap-6">
-                    <!-- 4 Đặc trưng -->
                     <div class="bg-silk-50 rounded-3xl p-6 sm:p-8 border border-gold-600/30 shadow-md">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="font-serif text-2xl sm:text-3xl font-bold text-jade-900">
@@ -390,7 +345,6 @@
                         </div>
                     </div>
 
-                    <!-- Ứng dụng Ngũ Hành vào Cột Sống & Sắc Diện Da -->
                     <div class="bg-jade-900 text-silk-100 rounded-3xl p-6 sm:p-7 border border-gold-500/30 shadow-md">
                         <h4 class="font-serif text-xl sm:text-2xl font-bold text-gold-400 mb-2">
                             Từ Trục Cột Sống (Đốc Mạch) Đến Dưỡng Sinh Làn Da
@@ -404,7 +358,7 @@
         </div>
     </section>
 
-    <!-- ==================== 3B. TƯ LIỆU LÂM SÀNG THỰC TẾ & ĐỘI NGŨ Y SỸ HỌC NGHỀ ==================== -->
+    <!-- ==================== 3B. TƯ LIỆU LÂM SÀNG THỰC TẾ ==================== -->
     <section id="tu-lieu-lam-sang" class="py-16 sm:py-24 bg-silk-100/80 border-b border-gold-600/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
@@ -418,7 +372,6 @@
                 </p>
             </div>
 
-            <!-- Khối 1: Hình ảnh Tập thể Nhóm Y Sỹ & Nguyên tắc Quy trình Bộ Y tế -->
             <div class="grid lg:grid-cols-12 gap-8 items-center bg-silk-50 rounded-3xl p-6 sm:p-8 border border-gold-600/30 shadow-md mb-12">
                 <div class="lg:col-span-6">
                     <div class="rounded-2xl overflow-hidden border border-gold-600/30 shadow-md bg-jade-950 cursor-pointer" onclick="openImageLightbox(this.querySelector('img').src, 'Y sỹ Nguyễn Hải Bằng cùng tập thể học viên, y sỹ YHCT tại Học viện Y Dược học Cổ truyền Việt Nam')">
@@ -461,13 +414,12 @@
                 </div>
             </div>
 
-            <!-- Khối 2: Hồ Sơ Hình Ảnh Đánh Dấu Trọng Điểm Lâm Sàng Thực Tế (7 ảnh thực tế) -->
             <div class="space-y-4 mb-6">
                 <h3 class="font-serif text-2xl sm:text-3xl font-bold text-jade-900 text-center">
                     Hồ Sơ Đánh Dấu Trọng Điểm & Thực Hành Lâm Sàng
                 </h3>
                 <p class="text-xs sm:text-sm text-ink-700 text-center max-w-2xl mx-auto">
-                    Các dấu chấm dọc theo mỏm gai cột sống, vòng tròn khoanh vùng ổ rối loạn và mũi tên thể hiện hướng co kéo của lớp cơ bệnh lý (bấm vào từng ảnh để xem phóng to):
+                    Các hình ảnh được làm mờ mặc định nhằm tôn trọng sự riêng tư. Kích trực tiếp vào từng hồ sơ để xem rõ nét tư liệu lâm sàng:
                 </p>
             </div>
 
@@ -628,7 +580,7 @@
                     </div>
                 </div>
 
-                <!-- Ca 7 (Nổi bật toàn chiều rộng trên màn hình lớn để thể hiện thực hành trực tiếp) -->
+                <!-- Ca 7 -->
                 <div class="sm:col-span-2 lg:col-span-3 bg-silk-50 rounded-2xl border border-gold-600/30 overflow-hidden shadow-sm grid md:grid-cols-12 items-center">
                     <div class="relative md:col-span-5 h-80 bg-jade-950 overflow-hidden cursor-pointer group" onclick="openImageLightbox(this.querySelector('img').src, 'Thực hành xác định mốc giải phẫu T3, T7, khung xương bả vai và thao tác giải tỏa cơ liên bả vai')">
                         <img 
@@ -664,7 +616,7 @@
         </div>
     </section>
 
-    <!-- ==================== 4. BẢNG TRA CỨU ĐỐT SỐNG TƯƠNG TÁC (THU GỌN / MỞ RỘNG CHI TIẾT) ==================== -->
+    <!-- ==================== 4. BẢNG TRA CỨU ĐỐT SỐNG TƯƠNG TÁC ==================== -->
     <section id="bang-tra-cuu" class="py-16 sm:py-24 bg-silk-200/60 border-b border-gold-600/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-10">
@@ -677,10 +629,8 @@
                 </p>
             </div>
 
-            <!-- Thanh công cụ Lọc & Tìm kiếm -->
             <div class="bg-silk-50 rounded-2xl p-4 sm:p-5 border border-gold-600/30 shadow-sm mb-6 space-y-4">
                 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-                    <!-- Filter Tabs -->
                     <div class="flex flex-wrap gap-2">
                         <button type="button" data-region="all" class="region-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-jade-900 text-silk-50 transition-all">
                             Tất Cả (C1 – S5)
@@ -699,7 +649,6 @@
                         </button>
                     </div>
 
-                    <!-- Search Box & Expand/Collapse All -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
                         <div class="relative">
                             <input type="text" id="vertebra-search" placeholder="Tìm triệu chứng (vd: hoa mắt, tê tay, dạ dày, tọa...)" class="w-full sm:w-72 pl-9 pr-4 py-2 rounded-xl border border-gold-600/30 bg-silk-100 text-xs sm:text-sm focus:outline-none focus:border-jade-900">
@@ -714,9 +663,7 @@
                 </div>
             </div>
 
-            <!-- Bảng Dữ Liệu Tương Tác (Accordion Table) -->
             <div class="bg-silk-50 rounded-3xl border border-gold-600/30 shadow-lg overflow-hidden">
-                <!-- Table Header (Desktop) -->
                 <div class="hidden md:grid md:grid-cols-12 bg-jade-900 text-silk-50 px-6 py-4 text-xs font-bold uppercase tracking-wider">
                     <div class="col-span-2">Đốt Sống</div>
                     <div class="col-span-3">Vùng Chi Phối & Tạng Phủ</div>
@@ -724,13 +671,9 @@
                     <div class="col-span-2 text-right">Chi Tiết Y Khoa</div>
                 </div>
 
-                <!-- Dynamic Rows Container -->
-                <div id="vertebra-table-body" class="divide-y divide-gold-600/20">
-                    <!-- Rendered via JS -->
-                </div>
+                <div id="vertebra-table-body" class="divide-y divide-gold-600/20"></div>
             </div>
 
-            <!-- Hộp Dẫn Chứng Nguồn Chính Thống Cho Bảng Tra Cứu -->
             <div class="mt-6 p-5 rounded-2xl bg-silk-50 border border-gold-600/30 flex flex-col sm:flex-row items-start gap-4 text-xs sm:text-sm text-ink-700">
                 <div class="w-10 h-10 rounded-xl bg-cinnabar-700 text-silk-50 flex items-center justify-center shrink-0 font-serif font-bold text-lg">
                     §
@@ -747,7 +690,7 @@
         </div>
     </section>
 
-    <!-- ==================== 5. CÔNG CỤ TỰ ĐÁNH GIÁ TRIỆU CHỨNG ĐA BỆNH LÝ (ĐẦU VÀO TRỰC QUAN) ==================== -->
+    <!-- ==================== 5. CÔNG CỤ TỰ ĐÁNH GIÁ TRIỆU CHỨNG ==================== -->
     <section id="danh-gia-trieu-chung" class="py-16 sm:py-24 border-b border-gold-600/25">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
@@ -764,8 +707,6 @@
 
             <div class="bg-silk-50 rounded-3xl border border-gold-600/30 shadow-xl p-6 sm:p-10">
                 <form id="symptom-assessment-form" class="space-y-8">
-                    
-                    <!-- Nhóm 1: Cổ - Vai - Gáy & Tiền đình -->
                     <div class="space-y-3">
                         <h3 class="font-serif text-xl sm:text-2xl font-bold text-jade-900 flex items-center gap-2.5 border-b border-gold-600/20 pb-2">
                             <span class="w-7 h-7 rounded-lg bg-jade-900 text-gold-400 text-sm font-sans flex items-center justify-center">I</span>
@@ -787,7 +728,6 @@
                         </div>
                     </div>
 
-                    <!-- Nhóm 2: Lưng Trên & Tạng Phủ (Ngũ Hành) -->
                     <div class="space-y-3">
                         <h3 class="font-serif text-xl sm:text-2xl font-bold text-jade-900 flex items-center gap-2.5 border-b border-gold-600/20 pb-2">
                             <span class="w-7 h-7 rounded-lg bg-jade-900 text-gold-400 text-sm font-sans flex items-center justify-center">II</span>
@@ -809,7 +749,6 @@
                         </div>
                     </div>
 
-                    <!-- Nhóm 3: Thắt Lưng & Thần Kinh Tọa -->
                     <div class="space-y-3">
                         <h3 class="font-serif text-xl sm:text-2xl font-bold text-jade-900 flex items-center gap-2.5 border-b border-gold-600/20 pb-2">
                             <span class="w-7 h-7 rounded-lg bg-jade-900 text-gold-400 text-sm font-sans flex items-center justify-center">III</span>
@@ -831,7 +770,6 @@
                         </div>
                     </div>
 
-                    <!-- Nhóm 4: Thể Trạng & Dưỡng Sinh Làn Da - Khí Huyết -->
                     <div class="space-y-3">
                         <h3 class="font-serif text-xl sm:text-2xl font-bold text-jade-900 flex items-center gap-2.5 border-b border-gold-600/20 pb-2">
                             <span class="w-7 h-7 rounded-lg bg-gold-600 text-silk-50 text-sm font-sans flex items-center justify-center">IV</span>
@@ -849,7 +787,6 @@
                         </div>
                     </div>
 
-                    <!-- Bước bổ sung: Thời gian mắc & Mức độ ảnh hưởng -->
                     <div class="grid sm:grid-cols-2 gap-6 pt-2">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-jade-900 mb-2">Thời gian xuất hiện triệu chứng:</label>
@@ -868,12 +805,10 @@
                         </div>
                     </div>
 
-                    <!-- Thông báo lỗi nếu chưa chọn -->
                     <div id="sym-error" class="hidden p-4 rounded-xl bg-cinnabar-100 border border-cinnabar-700 text-cinnabar-800 text-sm font-medium">
                         Vui lòng chọn ít nhất 1 biểu hiện ở các nhóm trên để hệ thống phân tích vùng đốt sống liên quan.
                     </div>
 
-                    <!-- Nút phân tích -->
                     <div class="text-center">
                         <button type="submit" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-jade-900 hover:bg-jade-800 text-silk-50 font-semibold text-base shadow-lg transition-all border border-gold-500/40">
                             <span>Phân Tích Kết Quả Sơ Bộ</span>
@@ -884,7 +819,6 @@
                     </div>
                 </form>
 
-                <!-- Hộp Kết Quả Phân Tích Chi Tiết -->
                 <div id="sym-result-panel" class="hidden mt-8 pt-8 border-t-2 border-dashed border-gold-600/30">
                     <div class="bg-jade-900 text-silk-50 rounded-3xl p-6 sm:p-8 space-y-5 shadow-xl">
                         <div class="flex flex-wrap items-center justify-between gap-2">
@@ -901,19 +835,11 @@
 
                         <div id="res-explanation" class="text-sm sm:text-base text-silk-100 leading-relaxed space-y-2"></div>
 
-                        <!-- Cảnh báo Cờ Đỏ Y Khoa -->
                         <div class="p-4 rounded-2xl bg-cinnabar-800/60 border border-cinnabar-700 text-xs sm:text-sm text-silk-100">
                             <strong class="text-gold-300 block mb-1">⚠ Lưu ý an toàn y khoa (Cờ đỏ cần thăm khám bệnh viện trước):</strong>
                             Nếu bạn có kèm theo sốt cao, sụt cân không rõ nguyên nhân, chấn thương mạnh vừa xảy ra, yếu liệt chân tay tiến triển nhanh hoặc rối loạn đại tiểu tiện, cần đến ngay cơ sở y tế tuyến trên để kiểm tra chuyên sâu trước khi thực hiện bất kỳ thủ thuật vật lý nào.
                         </div>
 
-                        <!-- Hành động chuyển sang Zalo Y sỹ Nguyễn Hải Bằng -->
-                        <div class="bg-silk-50 text-ink-900 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-                            <div>
-                                <p class="font-serif text-xl font-bold text-jade-900">Gửi kết quả này cho Y sỹ Nguyễn Hải Bằng</p>
-                                <p class="text-xs sm:text-sm text-ink-700 mt-0.5">Sao chép tóm tắt triệu chứng và mở khung chat Zalo <strong>0898.765.865</strong> để được tư vấn trực tiếp.</p>
-                            </div>
-                        <!-- Hành động chuyển sang Zalo Y sỹ Nguyễn Hải Bằng (Chân phương, rõ ràng) -->
                         <div class="bg-silk-50 text-ink-900 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
                             <div>
                                 <p class="font-serif text-xl font-bold text-jade-900">Gửi kết quả này cho Y sỹ Nguyễn Hải Bằng</p>
@@ -934,25 +860,25 @@
         </div>
     </section>
 
-    <!-- ==================== 6. THƯ VIỆN KIẾN THỨC & PHỤC HỒI CHUYÊN SÂU (DÙNG HÌNH ẢNH THỰC TẾ) ==================== -->
+    <!-- ==================== 6. KHO TÀI LIỆU CHUYÊN MÔN & PHỤC HỒI (LÀM DÀY NỘI DUNG HỌC THUẬT) ==================== -->
     <section id="thu-vien-kien-thuc" class="py-16 sm:py-24 bg-silk-200/50 border-b border-gold-600/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-cinnabar-700">Tài Liệu Tham Khảo & Phục Hồi Chức Năng</span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-cinnabar-700">Chuyên Khảo Y Học Cổ Truyền & Phục Hồi Chức Năng</span>
                     <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-jade-900 mt-2">
-                        Thư Viện Kiến Thức & Phục Hồi Cột Sống
+                        Kho Tài Liệu Chuyên Sâu & Cẩm Nang Phục Hồi
                     </h2>
                 </div>
                 <p class="text-sm text-ink-700 max-w-md">
-                    Tổng hợp kiến thức chuẩn y khoa từ Bệnh viện Y học cổ truyền Tuệ Tĩnh, quy trình kỹ thuật Bộ Y tế và hướng dẫn tập luyện tại nhà.
+                    Tổng hợp các chuyên đề biên soạn dày dặn theo giáo trình đào tạo tại Bệnh viện Tuệ Tĩnh, quy trình kỹ thuật Bộ Y tế và kinh nghiệm thực hành lâm sàng.
                 </p>
             </div>
 
-            <!-- Grid 6 Bài Viết Chuyên Sâu -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mb-16">
+            <!-- Grid 9 Chuyên Đề Tài Liệu Chuyên Sâu -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
                 
-                <!-- Bài 1: Dùng ảnh thực tế khám và đánh dấu trọng điểm TĐCS -->
+                <!-- Tài liệu 1 -->
                 <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
                     <div class="relative h-52 bg-jade-950 overflow-hidden">
                         <img 
@@ -962,7 +888,7 @@
                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/1B4332/FAF8F3?text=Quy+Trinh+Bo+Y+Te';"
                         >
                         <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-jade-950/85 text-gold-300 text-xs font-semibold backdrop-blur-sm">
-                            Quy Trình Bộ Y Tế
+                            Chuyên Đề 01 • Quy Trình Bộ Y Tế
                         </span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -971,17 +897,17 @@
                                 Quy trình chuẩn kỹ thuật Tác Động Cột Sống theo Bộ Y tế & BV Tuệ Tĩnh
                             </h3>
                             <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
-                                Tìm hiểu các bước thăm khám 4 đặc trưng, nguyên tắc định vị – định tính – định lượng và các thủ thuật phần mềm đầu ngón tay chuẩn mực.
+                                Trình bày chi tiết 4 bước khám lâm sàng, hệ thống 4 nguyên tắc (Định vị – Định tính – Định lượng – Định hướng) và các phương thức, thủ thuật phần mềm đầu ngón tay.
                             </p>
                         </div>
                         <button type="button" data-article="0" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
-                            <span>Xem tài liệu chi tiết</span>
+                            <span>Đọc toàn văn chuyên đề</span>
                             <span>→</span>
                         </button>
                     </div>
                 </article>
 
-                <!-- Bài 2: Dùng ảnh sơ đồ giải phẫu đốt sống cổ C1-C7 & động mạch sống -->
+                <!-- Tài liệu 2 -->
                 <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
                     <div class="relative h-52 bg-white overflow-hidden p-2">
                         <img 
@@ -991,115 +917,163 @@
                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/FAF8F3/1B4332?text=Giai+Phau+Dot+Song+Co';"
                         >
                         <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-cinnabar-700 text-silk-50 text-xs font-semibold">
-                            Kiến Thức Từ BV Tuệ Tĩnh
+                            Chuyên Đề 02 • Giải Phẫu & Bệnh Học
                         </span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <h3 class="font-serif text-2xl font-bold text-jade-900 leading-snug mb-2.5">
-                                Giải phẫu vùng cổ C1–C7 & Cơ chế phục hồi đĩa đệm khi giải tỏa lớp cơ
+                                Giải phẫu động mạch đốt sống cổ (C1–C7) & Hội chứng thiểu năng tuần hoàn não
                             </h3>
                             <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
-                                Phân tích liên quan giữa động mạch sống vùng cổ, cơ chế thẩm thấu dinh dưỡng của đĩa đệm L4–L5 và giải phóng chèn ép rễ thần kinh.
+                                Phân tích đường đi của động mạch sống qua lỗ ngang C6–C1, cơ chế co thắt cơ chẩm dưới gây chèn ép mạch máu và hướng giải tỏa an toàn.
                             </p>
                         </div>
                         <button type="button" data-article="1" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
-                            <span>Xem tài liệu chi tiết</span>
+                            <span>Đọc toàn văn chuyên đề</span>
                             <span>→</span>
                         </button>
                     </div>
                 </article>
 
-                <!-- Bài 3: Dùng ảnh thực tế khám lâm sàng đốt sống C7, T6-T7, L4 -->
+                <!-- Tài liệu 3 -->
                 <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
                     <div class="relative h-52 bg-jade-950 overflow-hidden">
                         <img 
-                            src="lam-sang-3.jpg" 
-                            alt="Trị liệu phần mềm đầu ngón tay không bẻ khớp" 
+                            src="lam-sang-2.jpg" 
+                            alt="Cơ chế phục hồi đĩa đệm L4-L5 và thần kinh tọa" 
                             class="w-full h-full object-cover object-center opacity-95 hover:scale-105 transition-transform duration-500"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/1B4332/FAF8F3?text=Tac+Dong+Cot+Song+Viet+Nam';"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/1B4332/FAF8F3?text=Dia+Dem+L4-L5';"
                         >
                         <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-jade-950/85 text-gold-300 text-xs font-semibold backdrop-blur-sm">
-                            Kiến Thức Chuẩn Xác
+                            Chuyên Đề 03 • Thắt Lưng & Tọa
                         </span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <h3 class="font-serif text-2xl font-bold text-jade-900 leading-snug mb-2.5">
-                                Phân biệt Tác Động Cột Sống Việt Nam với nắn chỉnh bẻ khớp
+                                Cơ chế thẩm thấu nuôi dưỡng đĩa đệm L4–L5, S1 & Giải phóng rễ thần kinh tọa
                             </h3>
                             <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
-                                Tác Động Cột Sống hoàn toàn không dùng lực vặn bẻ tạo tiếng kêu "rắc", đảm bảo độ êm ái và an toàn cao cho cả người cao tuổi.
+                                Lý giải tại sao giải tỏa lớp cơ dựng sống và cơ thắt lưng chậu giúp giảm áp lực nội đĩa đệm, hỗ trợ phục hồi phồng/thoát vị đĩa đệm không phẫu thuật.
                             </p>
                         </div>
                         <button type="button" data-article="2" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
-                            <span>Xem tài liệu chi tiết</span>
+                            <span>Đọc toàn văn chuyên đề</span>
                             <span>→</span>
                         </button>
                     </div>
                 </article>
 
-                <!-- Bài 4 -->
+                <!-- Tài liệu 4 -->
                 <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
                     <div class="h-44 bg-gradient-to-br from-jade-900 via-jade-800 to-jade-950 p-6 flex flex-col justify-between relative overflow-hidden">
-                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-gold-500/25 text-gold-300 text-xs font-semibold">Phục Hồi Tại Nhà</span>
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-gold-500/25 text-gold-300 text-xs font-semibold">Chuyên Đề 04 • Học Thuật Chẩn Trị</span>
                         <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
-                            4 Bài tập phục hồi & kéo giãn cột sống cổ – thắt lưng an toàn
+                            Hệ thống "Trọng Điểm" & Quy luật bù trừ sinh lý trên trục cột sống
                         </h3>
-                        <svg class="absolute -right-4 -bottom-4 w-28 h-28 text-gold-400/15" viewBox="0 0 100 100" fill="currentColor">
-                            <circle cx="50" cy="50" r="45"/>
-                        </svg>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
-                            Hướng dẫn chi tiết động tác Thu cằm (Chin Tuck), Tư thế Nhân sư, Mèo – Bò và kéo giãn cơ hình lê giúp duy trì hiệu quả sau trị liệu.
+                            Phân biệt ổ rối loạn nguyên phát và điểm bù trừ thứ phát (ví dụ: lệch cổ C2 kéo theo bù trừ thắt lưng L4), giúp trị liệu trúng đích, không dàn trải.
                         </p>
                         <button type="button" data-article="3" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
-                            <span>Xem hướng dẫn tập luyện</span>
+                            <span>Đọc toàn văn chuyên đề</span>
                             <span>→</span>
                         </button>
                     </div>
                 </article>
 
-                <!-- Bài 5 -->
-                <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
-                    <div class="h-44 bg-gradient-to-br from-gold-700 via-gold-600 to-jade-900 p-6 flex flex-col justify-between relative overflow-hidden">
-                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-jade-950/40 text-silk-50 text-xs font-semibold">Âm Dương & Dưỡng Sinh</span>
-                        <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
-                            Khí huyết Đốc Mạch – Ngũ Hành và sức khỏe làn da từ bên trong
-                        </h3>
-                        <svg class="absolute -right-4 -bottom-4 w-28 h-28 text-silk-50/15" viewBox="0 0 100 100" fill="currentColor">
-                            <circle cx="50" cy="50" r="45"/>
-                        </svg>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
-                            Lý giải mối quan hệ giữa hệ Du huyệt dọc cột sống với chức năng Phế chủ bì mao, Can tàng huyết, giúp nuôi dưỡng sắc diện tươi sáng tự nhiên.
-                        </p>
-                        <button type="button" data-article="4" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
-                            <span>Xem bài viết dưỡng sinh</span>
-                            <span>→</span>
-                        </button>
-                    </div>
-                </article>
-
-                <!-- Bài 6 -->
+                <!-- Tài liệu 5 -->
                 <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
                     <div class="h-44 bg-gradient-to-br from-cinnabar-800 via-jade-950 to-jade-900 p-6 flex flex-col justify-between relative overflow-hidden">
-                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-gold-500/25 text-gold-300 text-xs font-semibold">Phòng Bệnh Chủ Động</span>
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-gold-500/25 text-gold-300 text-xs font-semibold">Chuyên Đề 05 • An Toàn Y Khoa</span>
                         <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
-                            Tư thế ngồi, nằm ngủ và giữ ấm vùng Đại Chùy – Mệnh Môn
+                            Phân biệt Tác Động Cột Sống Việt Nam với nắn chỉnh bẻ khớp & Chỉ định chống chỉ định
                         </h3>
-                        <svg class="absolute -right-4 -bottom-4 w-28 h-28 text-gold-400/15" viewBox="0 0 100 100" fill="currentColor">
-                            <circle cx="50" cy="50" r="45"/>
-                        </svg>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
-                            Những thói quen nhỏ hàng ngày quyết định 60% tốc độ thoái hóa cột sống và cách phòng tránh nhiễm phong hàn vào kinh lạc.
+                            Làm rõ sự khác biệt về cơ chế tác động phần mềm đầu ngón tay so với thao tác vặn bẻ khớp; liệt kê đầy đủ các trường hợp chống chỉ định theo Bộ Y tế.
+                        </p>
+                        <button type="button" data-article="4" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
+                            <span>Đọc toàn văn chuyên đề</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tài liệu 6 -->
+                <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-gold-700 via-gold-600 to-jade-900 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-jade-950/40 text-silk-50 text-xs font-semibold">Chuyên Đề 06 • Âm Dương Ngũ Hành</span>
+                        <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
+                            Khí huyết Đốc Mạch – Hệ Du Huyệt Ngũ Tạng và Dưỡng Sinh Làn Da
+                        </h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
+                            Lý giải mối liên hệ giữa Phế Du (D3), Can Du (D9), Tỳ Du (D11), Thận Du (L2) với sự tuần hoàn khí huyết lên vùng đầu mặt, nuôi dưỡng làn da sáng khỏe.
                         </p>
                         <button type="button" data-article="5" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
-                            <span>Xem cẩm nang sinh hoạt</span>
+                            <span>Đọc toàn văn chuyên đề</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tài liệu 7 -->
+                <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-jade-950 via-jade-900 to-jade-800 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-gold-500/25 text-gold-300 text-xs font-semibold">Chuyên Đề 07 • Phục Hồi Tại Nhà</span>
+                        <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
+                            Phác đồ 5 bài tập phục hồi & kéo giãn cột sống cổ – thắt lưng chuẩn y khoa
+                        </h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
+                            Hướng dẫn từng bước kỹ thuật hít thở, nhịp giữ và số lần lặp lại cho các bài tập: Thu cằm, Mèo – Bò, Nhân sư, Kéo giãn cơ hình lê và Xoay bả vai.
+                        </p>
+                        <button type="button" data-article="6" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
+                            <span>Đọc toàn văn chuyên đề</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tài liệu 8 -->
+                <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-jade-900 via-gold-700 to-jade-950 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-silk-50/20 text-silk-50 text-xs font-semibold">Chuyên Đề 08 • Dưỡng Sinh Tứ Quý</span>
+                        <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
+                            Bảo vệ cửa ngõ Đại Chùy (C7) – Mệnh Môn (L2) & Phép dưỡng sinh theo mùa
+                        </h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
+                            Cách phòng tránh phong hàn thấp xâm nhập vào kinh Bàng Quang và Đốc Mạch khi thời tiết giao mùa tại miền Bắc, kèm chế độ ăn uống bổ Can Thận.
+                        </p>
+                        <button type="button" data-article="7" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
+                            <span>Đọc toàn văn chuyên đề</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tài liệu 9 -->
+                <article class="bg-silk-50 rounded-3xl border border-gold-600/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
+                    <div class="h-44 bg-gradient-to-br from-jade-900 via-jade-800 to-cinnabar-800 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <span class="inline-block w-fit px-3 py-1 rounded-full bg-gold-500/25 text-gold-300 text-xs font-semibold">Chuyên Đề 09 • Hỏi Đáp Thực Tế</span>
+                        <h3 class="font-serif text-2xl font-bold text-silk-50 leading-snug relative z-10">
+                            Giải đáp 6 câu hỏi thường gặp của người bệnh khi tiếp cận Tác Động Cột Sống
+                        </h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-xs sm:text-sm text-ink-700 leading-relaxed mb-4">
+                            Giải đáp cặn kẽ: Một liệu trình kéo dài bao lâu? Sau buổi đầu có đau mỏi nhẹ không? Người đã từng mổ cột sống hoặc loãng xương có áp dụng được không?
+                        </p>
+                        <button type="button" data-article="8" class="open-article-btn inline-flex items-center gap-2 text-sm font-bold text-jade-900 hover:text-cinnabar-700 transition-colors pt-3 border-t border-gold-600/15">
+                            <span>Đọc toàn văn chuyên đề</span>
                             <span>→</span>
                         </button>
                     </div>
@@ -1109,13 +1083,12 @@
         </div>
     </section>
 
-    <!-- ==================== 7. LỊCH LÀM VIỆC, ĐỊA CHỈ & KÊNH ZALO TRỰC TIẾP (ĐƠN GIẢN, CHÂN PHƯƠNG) ==================== -->
+    <!-- ==================== 7. LỊCH LÀM VIỆC, ĐỊA CHỈ & KÊNH ZALO TRỰC TIẾP ==================== -->
     <section id="lich-lam-viec" class="py-16 sm:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-jade-900 rounded-3xl p-6 sm:p-12 text-silk-100 shadow-2xl eastern-frame">
                 <div class="grid lg:grid-cols-12 gap-10 items-center">
                     
-                    <!-- Left Column: Lịch làm việc tinh tế & Địa chỉ (7 cols) -->
                     <div class="lg:col-span-7 space-y-6">
                         <div>
                             <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold uppercase tracking-widest mb-3">
@@ -1129,7 +1102,6 @@
                             </p>
                         </div>
 
-                        <!-- Khối chi tiết Lịch làm việc & Địa chỉ -->
                         <div class="grid sm:grid-cols-2 gap-4">
                             <div class="p-5 rounded-2xl bg-jade-950/70 border border-gold-500/25 space-y-1.5">
                                 <span class="text-xs font-bold uppercase tracking-wider text-gold-400">Tư Vấn Trực Tuyến & Điện Thoại</span>
@@ -1167,7 +1139,6 @@
                         </div>
                     </div>
 
-                    <!-- Right Column: Thẻ Kết Nối Zalo & Số Điện Thoại Chân Phương (5 cols) -->
                     <div class="lg:col-span-5">
                         <div class="bg-silk-50 text-ink-900 rounded-3xl p-7 sm:p-8 border border-gold-600/40 shadow-xl text-center space-y-5">
                             <div class="space-y-1">
@@ -1180,7 +1151,6 @@
                                 </p>
                             </div>
 
-                            <!-- Số điện thoại mộc mạc, chân phương -->
                             <div class="py-4 px-5 rounded-2xl bg-silk-100 border border-gold-600/25">
                                 <p class="text-xs text-ink-500">Điện thoại / Zalo</p>
                                 <a href="tel:0898765865" class="block font-sans text-2xl sm:text-3xl font-bold text-jade-900 tracking-wide mt-1 hover:text-cinnabar-700 transition-colors">
@@ -1188,7 +1158,6 @@
                                 </a>
                             </div>
 
-                            <!-- Nút mở Zalo & Gọi giản dị -->
                             <div class="space-y-2.5">
                                 <a href="https://zalo.me/0898765865" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-jade-900 hover:bg-jade-800 text-silk-50 font-semibold text-sm sm:text-base transition-colors">
                                     Nhắn Tin Qua Zalo
@@ -1214,7 +1183,7 @@
         </div>
     </section>
 
-    <!-- ==================== 8. FOOTER (CHÂN TRANG CHUẨN XÁC) ==================== -->
+    <!-- ==================== 8. FOOTER ==================== -->
     <footer class="bg-jade-950 text-silk-200 py-10 border-t border-gold-500/25">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
             <div class="text-center sm:text-left">
@@ -1236,9 +1205,9 @@
         </div>
     </footer>
 
-    <!-- ==================== ARTICLE MODAL (HỘP THOẠI ĐỌC CHI TIẾT TÀI LIỆU) ==================== -->
+    <!-- ==================== ARTICLE MODAL ==================== -->
     <div id="article-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-jade-950/85 backdrop-blur-sm">
-        <div class="bg-silk-50 rounded-3xl max-w-2xl w-full max-h-[88vh] overflow-y-auto border border-gold-500/40 shadow-2xl p-6 sm:p-8 space-y-5">
+        <div class="bg-silk-50 rounded-3xl max-w-3xl w-full max-h-[88vh] overflow-y-auto border border-gold-500/40 shadow-2xl p-6 sm:p-8 space-y-5">
             <div class="flex items-start justify-between gap-4 border-b border-gold-600/20 pb-4">
                 <div>
                     <span id="modal-category" class="inline-block px-3 py-1 rounded-full bg-jade-100 text-jade-900 text-xs font-bold mb-2"></span>
@@ -1258,7 +1227,7 @@
         </div>
     </div>
 
-    <!-- ==================== IMAGE LIGHTBOX MODAL (PHÓNG TO ẢNH TƯ LIỆU) ==================== -->
+    <!-- ==================== IMAGE LIGHTBOX MODAL ==================== -->
     <div id="image-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-jade-950/90 backdrop-blur-sm" onclick="closeImageLightbox()">
         <div class="max-w-3xl w-full bg-silk-50 rounded-3xl overflow-hidden border border-gold-500/40 shadow-2xl" onclick="event.stopPropagation()">
             <div class="flex items-center justify-between px-5 py-3.5 bg-jade-900 text-silk-50">
@@ -1275,7 +1244,6 @@
 
     <!-- ==================== JAVASCRIPT LOGIC ==================== -->
     <script>
-        // Image Lightbox Functions
         function openImageLightbox(src, caption) {
             const lightbox = document.getElementById('image-lightbox');
             const img = document.getElementById('lightbox-img');
@@ -1296,7 +1264,6 @@
             document.body.style.overflow = '';
         }
 
-        // 1. Mobile Navigation Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -1308,7 +1275,6 @@
             link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
         });
 
-        // 2. Dữ Liệu Bảng Tra Cứu Đốt Sống (Có dẫn chứng Bộ Y tế & BV Tuệ Tĩnh)
         const vertebraeRecords = [
             {
                 code: 'C1 – C3',
@@ -1424,7 +1390,6 @@
 
             tableBody.innerHTML = filtered.map((item, idx) => `
                 <div class="vertebra-row group transition-colors hover:bg-silk-100/80">
-                    <!-- Main Summary Row (Clickable) -->
                     <button type="button" onclick="toggleVertebraRow(${idx})" class="w-full text-left px-5 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-4 items-center focus:outline-none">
                         <div class="md:col-span-2 flex items-center justify-between md:justify-start gap-2">
                             <span class="inline-flex items-center px-3 py-1 rounded-lg bg-jade-900 text-gold-300 font-serif font-bold text-base sm:text-lg">
@@ -1448,7 +1413,6 @@
                         </div>
                     </button>
 
-                    <!-- Expanded Medical Detail Panel -->
                     <div id="row-detail-${idx}" class="${allExpanded ? '' : 'hidden'} px-5 sm:px-6 pb-6 pt-2 bg-jade-50/70 border-t border-gold-600/15">
                         <div class="grid md:grid-cols-2 gap-4 text-xs sm:text-sm">
                             <div class="p-4 rounded-2xl bg-silk-50 border border-gold-600/20">
@@ -1517,7 +1481,6 @@
 
         renderVertebraeTable();
 
-        // 3. Công Cụ Tự Đánh Giá Triệu Chứng & Sao Chép Sang Zalo
         const symForm = document.getElementById('symptom-assessment-form');
         const symError = document.getElementById('sym-error');
         const symResultPanel = document.getElementById('sym-result-panel');
@@ -1560,7 +1523,6 @@
             symResultPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         });
 
-        // Copy text safely using execCommand fallback & open Zalo
         function copyTextToClipboard(text) {
             const tempTextarea = document.createElement('textarea');
             tempTextarea.value = text;
@@ -1570,9 +1532,7 @@
             tempTextarea.select();
             try {
                 document.execCommand('copy');
-            } catch (err) {
-                // Ignore fallback errors
-            }
+            } catch (err) {}
             document.body.removeChild(tempTextarea);
         }
 
@@ -1584,7 +1544,6 @@
             window.open('https://zalo.me/0898765865', '_blank', 'noopener,noreferrer');
         });
 
-        // Copy phone button in Contact section
         const copyPhoneBtn = document.getElementById('copy-phone-btn');
         const copyPhoneStatus = document.getElementById('copy-phone-status');
         copyPhoneBtn.addEventListener('click', () => {
@@ -1593,68 +1552,100 @@
             setTimeout(() => copyPhoneStatus.classList.add('hidden'), 3500);
         });
 
-        // 4. Thư Viện Bài Viết Chi Tiết (Modal)
+        // 4. Kho Tài Liệu Chuyên Sâu (9 Chuyên Đề Dày Dặn, Đầy Đủ Luận Cứ Y Khoa)
         const knowledgeArticles = [
             {
-                category: 'Quy Trình Bộ Y Tế & BV Tuệ Tĩnh',
+                category: 'Chuyên Đề 01 • Quy Trình Bộ Y Tế & BV Tuệ Tĩnh',
                 title: 'Quy trình chuẩn kỹ thuật Tác Động Cột Sống theo Bộ Y tế & Bệnh viện Tuệ Tĩnh',
                 paragraphs: [
-                    'Tác động cột sống là phương pháp chữa bệnh không dùng thuốc do Cố Lương y Nguyễn Tham Tán nghiên cứu từ những năm 1970, được Bộ Y tế công nhận và đưa vào giảng dạy chính quy tại Học viện Y Dược học Cổ truyền Việt Nam (Bệnh viện Tuệ Tĩnh) cũng như Bệnh viện Châm cứu Trung ương.',
-                    'Quy trình thăm khám chuẩn mực gồm 4 bước: (1) Quan sát tư thế và đường cong sinh lý cột sống; (2) Thăm khám nhiệt độ da bằng mu bàn tay/đầu ngón tay để phân biệt hàn – nhiệt; (3) Miết tìm biến đổi lớp cơ (co cứng, xơ sợi, teo nhẽo) và hình thái đốt sống (lồi, lệch, lõm); (4) Xác định chính xác Trọng điểm để tác động.',
-                    'Trong quá trình trị liệu, thầy thuốc tuân thủ nghiêm ngặt nguyên tắc Định vị (đúng điểm), Định tính (đúng tính chất biến đổi) và Định lượng (lực vừa đủ theo ngưỡng chịu đựng của người bệnh).'
+                    '<strong>1. Cơ sở pháp lý & đào tạo:</strong> Tác động cột sống là phương pháp chữa bệnh không dùng thuốc do Cố Lương y Nguyễn Tham Tán dày công nghiên cứu và hệ thống hóa từ những năm 1970. Phương pháp đã được Bộ Y tế công nhận, ban hành quy trình kỹ thuật chuẩn trong khám chữa bệnh Y học cổ truyền và đưa vào giảng dạy chính quy tại Học viện Y Dược học Cổ truyền Việt Nam (Bệnh viện Tuệ Tĩnh) cũng như Bệnh viện Châm cứu Trung ương.',
+                    '<strong>2. Quy trình 4 bước thăm khám chuẩn mực:</strong><br>• <em>Bước 1 – Vọng chẩn (Quan sát):</em> Đánh giá tư thế đứng, ngồi, độ cân bằng hai vai, hai mào chậu và đường cong sinh lý của 4 đoạn cột sống (Cổ – Ngực – Thắt lưng – Cùng).<br>• <em>Bước 2 – Xúc chẩn nhiệt độ:</em> Dùng mu bàn tay hoặc phần mềm đầu ngón tay lướt nhẹ dọc hai bên cột sống để phát hiện vùng tăng nhiệt độ (xung huyết, viêm cấp) hoặc giảm nhiệt độ (hàn trệ, thiểu dưỡng mạn tính).<br>• <em>Bước 3 – Thăm khám lớp cơ & hình thái đốt sống:</em> Sử dụng các thao tác Áp – Vuốt – Ấn – Vê để đánh giá trương lực cơ đệm (co cứng, dày cộm, xơ sợi hay teo nhẽo) và sự thay đổi vị trí của từng mỏm gai đốt sống (lồi, lệch trái/phải, lõm).<br>• <em>Bước 4 – Xác định Trọng điểm:</em> Điểm hội tụ đủ 4 đặc trưng biến đổi (đốt sống biến đổi + lớp cơ co cứng + nhiệt độ bất thường + cảm giác đau tức rõ rệt khi ấn).',
+                    '<strong>3. Hệ thống 4 nguyên tắc & 8 thủ thuật trị liệu:</strong> Người thầy thuốc tuân thủ nghiêm ngặt 4 nguyên tắc: <em>Định vị</em> (đúng điểm), <em>Định tính</em> (phân biệt thể cấp hay mạn), <em>Định lượng</em> (lực tác động vừa đủ theo ngưỡng chịu đựng của người bệnh) và <em>Định hướng</em> (tác động đúng chiều co rút của sợi cơ). Các thủ thuật phần mềm đầu ngón tay gồm: Đẩy, Xoay, Bật, Rung, Miết, Vê, Lăn, Ấn – hoàn toàn không dùng lực thô bạo.'
                 ],
-                citation: 'Nguồn tham khảo: Quy trình kỹ thuật chuyên ngành Y học cổ truyền – Bộ Y tế; Giáo trình Tác động cột sống – Học viện Y Dược học Cổ truyền Việt Nam.'
+                citation: 'Nguồn trích dẫn: Quyết định của Bộ Y tế về Quy trình kỹ thuật chuyên ngành YHCT; Giáo trình Tác động cột sống – Học viện Y Dược học Cổ truyền Việt Nam (BV Tuệ Tĩnh).'
             },
             {
-                category: 'Bệnh Lý Cột Sống Thắt Lưng',
-                title: 'Cơ chế phục hồi đĩa đệm L4–L5, S1 khi giải tỏa lớp cơ co cứng',
+                category: 'Chuyên Đề 02 • Giải Phẫu & Bệnh Học Vùng Cổ',
+                title: 'Giải phẫu động mạch đốt sống cổ (C1–C7) & Hội chứng thiểu năng tuần hoàn não',
                 paragraphs: [
-                    'Đĩa đệm cột sống ở người trưởng thành là cấu trúc vô mạch (không có mạch máu nuôi trực tiếp). Nguồn dinh dưỡng và nước đi vào nhân nhầy đĩa đệm hoàn toàn thông qua cơ chế thẩm thấu qua mâm sụn khi cột sống cử động nhịp nhàng.',
-                    'Khi vùng thắt lưng L4–L5 hoặc L5–S1 bị tổn thương, các nhóm cơ dựng sống và cơ thắt lưng chậu sẽ co cứng phản xạ để bảo vệ đốt sống. Tuy nhiên, sự co cứng kéo dài này lại tạo ra lực ép dọc trục rất lớn, khiến đĩa đệm bị mất nước, phình lồi và chèn ép vào rễ thần kinh tọa.',
-                    'Bằng các thủ thuật phần mềm đầu ngón tay (đẩy, xoay, bật, rung, miết) tác động vào trọng điểm, lớp cơ tầng sâu được làm mềm, khoảng gian đốt được giải phóng áp lực, từ đó tạo điều kiện thuận lợi cho đĩa đệm phục hồi tự nhiên.'
+                    '<strong>1. Đặc điểm giải phẫu vùng cổ:</strong> Cột sống cổ gồm 7 đốt sống (C1 đến C7), trong đó C1 (đốt đội) và C2 (đốt trục) có cấu tạo đặc biệt giúp đầu thực hiện các động tác gật và xoay linh hoạt. Điểm đặc trưng nhất của đốt sống cổ là có <em>lỗ ngang</em> ở hai bên mỏm ngang từ C6 lên C1, tạo thành một ống xương bảo vệ cho <strong>động mạch sống</strong> và <strong>tĩnh mạch sống</strong> đi lên nuôi dưỡng tiểu não, thân não, vùng chẩm và cơ quan tiền đình.',
+                    '<strong>2. Cơ chế gây hoa mắt, chóng mặt, đau đầu sau gáy:</strong> Khi người bệnh ngồi làm việc cúi đầu lâu, nằm gối quá cao hoặc nhiễm phong hàn vùng gáy, các nhóm cơ sâu như cơ chẩm dưới, cơ gối đầu và cơ bậc thang bị co cứng phản xạ. Sự co rút này kéo lệch đốt sống C1–C3 và làm hẹp khoảng không quanh lỗ ngang, khiến lưu lượng máu qua động mạch sống suy giảm, đồng thời kích thích hạch giao cảm cổ trên.',
+                    '<strong>3. Hướng giải tỏa theo Tác động cột sống:</strong> Thay vì chỉ dùng thuốc giảm đau hay hoạt huyết tạm thời, phương pháp tập trung giải tỏa lớp cơ co cứng tại vùng chẩm gáy và các đốt sống C1–C4, C7 (huyệt Đại Chùy), giúp trả lại sự thông thoáng cho động mạch sống và phục hồi tuần hoàn não tự nhiên.'
                 ],
-                citation: 'Nguồn tham khảo: Tài liệu lâm sàng Khoa Y học cổ truyền & Phục hồi chức năng – Bệnh viện Tuệ Tĩnh.'
+                citation: 'Nguồn trích dẫn: Giải phẫu học ứng dụng cột sống cổ & Giáo trình Tác động cột sống – Bệnh viện Y học cổ truyền Tuệ Tĩnh.'
             },
             {
-                category: 'Kiến Thức Y Khoa Chuẩn Xác',
-                title: 'Phân biệt Tác Động Cột Sống Việt Nam với nắn chỉnh bẻ khớp',
+                category: 'Chuyên Đề 03 • Thắt Lưng & Thần Kinh Tọa',
+                title: 'Cơ chế thẩm thấu nuôi dưỡng đĩa đệm L4–L5, S1 & Giải phóng rễ thần kinh tọa',
                 paragraphs: [
-                    'Nhiều người bệnh thường e ngại đi trị liệu cột sống vì sợ các động tác vặn bẻ cổ hoặc thắt lưng tạo tiếng kêu "rắc" đột ngột. Trên thực tế, Tác Động Cột Sống Việt Nam có nguyên lý hoàn toàn khác biệt.',
-                    'Phương pháp này không dùng lực đòn bẩy để bẻ khớp mà tập trung giải quyết nguyên nhân gốc rễ giữ đốt sống bị lệch: đó chính là sự co rút bất đối xứng của lớp cơ cạnh sống.',
-                    'Khi lớp cơ co cứng được giải tỏa hoàn toàn và nhiệt độ vùng da trở lại cân bằng, đốt sống sẽ tự động trở về vị trí sinh lý bình thường một cách êm ái, an toàn ngay cả với người cao tuổi hoặc người có mật độ xương suy giảm.'
+                    '<strong>1. Sinh lý dinh dưỡng đặc biệt của đĩa đệm:</strong> Ở người trưởng thành, đĩa đệm cột sống là tổ chức vô mạch (không có mạch máu nuôi trực tiếp bên trong nhân nhầy). Nguồn nước, oxy và dưỡng chất đi vào nuôi đĩa đệm hoàn toàn dựa vào cơ chế <em>thẩm thấu qua mâm sụn</em> của thân đốt sống trên và dưới, hoạt động như một chiếc bơm sinh học mỗi khi cột sống vận động và thư giãn.',
+                    '<strong>2. Vòng xoắn bệnh lý của cơ cạnh sống và thoát vị đĩa đệm:</strong> Vùng thắt lưng thấp (L4–L5 và L5–S1) là nơi chịu toàn bộ trọng lực của nửa thân trên. Khi làm việc sai tư thế hoặc mang vác nặng, lớp cơ dựng sống và cơ thắt lưng chậu co cứng lại để bảo vệ cột sống. Tuy nhiên, nếu tình trạng co cứng này kéo dài sẽ tạo ra lực ép dọc trục liên tục như một chiếc kìm siết chặt hai thân đốt sống, làm đĩa đệm mất nước, xẹp dần, phình lồi ra sau và chèn ép vào rễ thần kinh tọa (L5, S1) gây đau buốt từ lưng xuống mông, mặt sau đùi và bắp chân.',
+                    '<strong>3. Tác dụng của trị liệu phần mềm đầu ngón tay:</strong> Khi thầy thuốc dùng kỹ thuật giải tỏa trọng điểm làm mềm lớp cơ co thắt tầng sâu ở L3–L5, áp lực nén lên khoang gian đốt giảm xuống rõ rệt, khôi phục lại quá trình thẩm thấu dinh dưỡng tự nhiên của đĩa đệm và giải phóng sự chèn ép lên rễ thần kinh tọa.'
                 ],
-                citation: 'Nguồn tham khảo: Công trình nghiên cứu Phương pháp Tác động cột sống Việt Nam – Cố Lương y Nguyễn Tham Tán.'
+                citation: 'Nguồn trích dẫn: Tài liệu lâm sàng Khoa YHCT & Phục hồi chức năng – Bệnh viện Tuệ Tĩnh; Nghiên cứu điều trị đau thần kinh tọa bằng TĐCS.'
             },
             {
-                category: 'Phục Hồi Chức Năng Tại Nhà',
-                title: '4 Bài tập phục hồi & kéo giãn cột sống cổ – thắt lưng an toàn',
+                category: 'Chuyên Đề 04 • Học Thuật Chẩn Trị Chuyên Sâu',
+                title: 'Hệ thống "Trọng Điểm" & Quy luật bù trừ sinh lý trên trục cột sống',
                 paragraphs: [
-                    '1. Động tác Thu Cằm (Chin Tuck): Ngồi thẳng lưng, mắt nhìn thẳng. Nhẹ nhàng kéo cằm lùi về phía sau sao cho gáy thẳng trục, giữ 5 giây rồi thả lỏng. Lặp lại 10 lần giúp giảm tải cho đốt sống C1–C5.',
-                    '2. Tư thế Mèo – Bò (Cat-Cow): Chống hai tay và hai đầu gối xuống thảm. Hít vào võng nhẹ lưng, ngẩng đầu; thở ra cuộn tròn lưng lên cao, cúi đầu. Thực hiện chậm 10 nhịp giúp tăng dịch khớp và thẩm thấu đĩa đệm.',
-                    '3. Tư thế Nhân Sư (Sphinx): Nằm sấp, chống hai khuỷu tay vuông góc dưới vai, nâng nhẹ ngực lên trong khi hông vẫn áp sát thảm, giữ 15–20 giây để giải tỏa áp lực vùng L4–L5.',
-                    '4. Kéo giãn cơ hình lê (Piriformis Stretch): Nằm ngửa, gác cổ chân phải lên đầu gối trái, hai tay ôm đùi trái kéo nhẹ về phía ngực trong 20 giây rồi đổi bên. Rất tốt cho người hay đau mông và thần kinh tọa.'
+                    '<strong>1. Khái niệm Trọng điểm trong Tác động cột sống:</strong> Trên một đoạn cột sống bị bệnh có thể xuất hiện nhiều điểm đau lan tỏa, nhưng chỉ có một hoặc một vài điểm giữ vai trò trung tâm chi phối toàn bộ ổ rối loạn – gọi là <em>Trọng điểm</em>. Giải tỏa đúng Trọng điểm thì các điểm đau vệ tinh xung quanh sẽ tự động dịu xuống.',
+                    '<strong>2. Quy luật bù trừ sinh lý (Liên đới trên – dưới):</strong> Cột sống là một trục thống nhất giữ thăng bằng cho trọng tâm cơ thể. Khi một đốt sống vùng cổ (ví dụ C2 hoặc C7) bị lệch sang phải do thói quen sinh hoạt, cơ thể sẽ tự động điều chỉnh một đốt sống ở vùng lưng giữa (T6–T7) hoặc thắt lưng (L4) lệch bù trừ theo chiều ngược lại để giữ cho đầu và mắt luôn nhìn thẳng về phía trước.',
+                    '<strong>3. Giá trị trong thực hành lâm sàng:</strong> Nhờ nắm vững quy luật bù trừ này (như thể hiện trong các hồ sơ đánh dấu lâm sàng của CLB), Y sỹ không chỉ xử lý tại chỗ người bệnh kêu đau mà còn kiểm tra toàn trục từ cổ xuống xương cùng để giải tỏa tận gốc cả điểm nguyên phát lẫn điểm bù trừ, ngăn ngừa tái phát.'
                 ],
-                citation: 'Nguồn tham khảo: Hướng dẫn tập luyện phục hồi chức năng cột sống – Y sỹ YHCT Nguyễn Hải Bằng biên soạn.'
+                citation: 'Nguồn trích dẫn: Công trình nghiên cứu Phương pháp Tác động cột sống Việt Nam – Cố Lương y Nguyễn Tham Tán (NXB Y học).'
             },
             {
-                category: 'Âm Dương Ngũ Hành & Dưỡng Sinh',
-                title: 'Khí huyết Đốc Mạch – Ngũ Hành và sức khỏe làn da từ bên trong',
+                category: 'Chuyên Đề 05 • An Toàn Y Khoa & Chỉ Định',
+                title: 'Phân biệt Tác Động Cột Sống Việt Nam với nắn chỉnh bẻ khớp & Chỉ định chống chỉ định',
                 paragraphs: [
-                    'Trong lý luận Y học phương Đông, "Hữu chư nội tất hình chư ngoại" – bên trong tạng phủ, khí huyết có điều hòa thì bên ngoài làn da và sắc diện mới tươi nhuận. Cột sống chính là nơi vận hành của Đốc Mạch (tổng đốc toàn bộ kinh dương) và là nơi hội tụ của hệ thống Du huyệt Ngũ Tạng.',
-                    'Khi vùng cột sống ngực trên (D3 – Phế Du) thông suốt, chức năng "Phế chủ bì mao" được tăng cường giúp lỗ chân lông hô hấp tốt, da sáng mịn. Khi vùng D9 (Can Du) và L2 (Thận Du) được khai thông, Thận Thủy nuôi dưỡng Can Mộc, giảm tình trạng sạm da, khô da do căng thẳng và thức khuya.',
-                    'Đây cũng là định hướng chăm sóc sức khỏe toàn diện: kết hợp khơi thông trục cột sống bên trong với dưỡng sinh chăm sóc da tự nhiên bên ngoài.'
+                    '<strong>1. Sự khác biệt cốt lõi về kỹ thuật:</strong> Nhiều người thường nhầm lẫn Tác động cột sống với các phương pháp nắn chỉnh xương khớp dùng lực đòn bẩy vặn bẻ tạo tiếng kêu "rắc". Tác động cột sống Việt Nam <strong>tuyệt đối không vặn bẻ khớp</strong>. Phương pháp sử dụng phần mềm đầu ngón tay tác động trực tiếp vào lớp cơ co cứng và dây chằng quanh đốt sống. Khi lớp cơ được làm mềm và cân bằng nhiệt độ, đốt sống sẽ tự trở về vị trí sinh lý một cách êm ái.',
+                    '<strong>2. Những trường hợp chỉ định phù hợp:</strong> Đau đầu, rối loạn tiền đình do thoái hóa đốt sống cổ; hội chứng cổ vai cánh tay; đau dây thần kinh liên sườn; đau thắt lưng cấp và mạn tính; đau thần kinh tọa; phồng hoặc thoát vị đĩa đệm mức độ nhẹ và vừa; hỗ trợ điều hòa rối loạn chức năng tiêu hóa, mất ngủ, suy nhược cơ thể.',
+                    '<strong>3. Các trường hợp chống chỉ định (Tuân thủ nghiêm ngặt quy định Bộ Y tế):</strong> Không thực hiện thủ thuật trên người bệnh đang bị lao cột sống, ung thư xương hoặc di căn cột sống, gãy xương – trật khớp cột sống do chấn thương mới, viêm tủy xương, loãng xương mức độ nặng, rối loạn đông máu hoặc vùng da tại chỗ đang viêm nhiễm lở loét.'
                 ],
-                citation: 'Nguồn tham khảo: Học thuyết Kinh Lạc & Ngũ Hành ứng dụng trong Dưỡng sinh Y học cổ truyền.'
+                citation: 'Nguồn trích dẫn: Quy định Chỉ định & Chống chỉ định kỹ thuật Tác động cột sống – Bộ Y tế.'
             },
             {
-                category: 'Phòng Bệnh Chủ Động',
-                title: 'Tư thế ngồi, nằm ngủ và giữ ấm vùng Đại Chùy – Mệnh Môn',
+                category: 'Chuyên Đề 06 • Âm Dương Ngũ Hành & Dưỡng Sinh',
+                title: 'Khí huyết Đốc Mạch – Hệ Du Huyệt Ngũ Tạng và Dưỡng Sinh Làn Da',
                 paragraphs: [
-                    '1. Nguyên tắc màn hình ngang tầm mắt: Khi làm việc máy tính, đặt mép trên màn hình ngang tầm mắt để tránh cúi cổ quá 15 độ (góc cúi 45 độ làm tăng tải trọng lên đốt sống cổ lên tới hơn 20kg).',
-                    '2. Tư thế nằm ngủ bảo vệ cột sống: Nên nằm đệm có độ phẳng và đàn hồi vừa phải (không nằm đệm quá lún). Nếu nằm ngửa, đặt một chiếc gối mỏng dưới khoeo chân; nếu nằm nghiêng, kẹp một chiếc gối giữa hai đầu gối để giữ khung chậu cân bằng.',
-                    '3. Giữ ấm hai cửa ngõ dương khí: Huyệt Đại Chùy (dưới gai sau đốt sống cổ C7) và huyệt Mệnh Môn (dưới gai sau đốt sống thắt lưng L2) là hai vị trí rất dễ bị phong hàn xâm nhập khi nằm điều hòa hoặc đi đêm, cần luôn được giữ ấm.'
+                    '<strong>1. Trục cột sống là trung tâm vận hành khí huyết:</strong> Trong Y học phương Đông, dọc chính giữa cột sống là đường tuần hành của <strong>Đốc Mạch</strong> – nơi hội tụ và điều hành toàn bộ dương khí của cơ thể. Cách đường giữa sang hai bên 1,5 thốn là đường kinh <strong>Túc Thái Dương Bàng Quang</strong>, nơi phân bố đầy đủ hệ thống <em>Bối Du Huyệt</em> thông trực tiếp vào Ngũ Tạng và Lục Phủ.',
+                    '<strong>2. Mối liên hệ Ngũ Hành với sắc diện làn da:</strong><br>• <em>Phế Du (ngang đốt sống ngực D3):</em> Phế chủ bì mao (da lông). Khi vùng lưng trên thông thoáng, Phế khí tuyên phát tốt giúp lỗ chân lông hô hấp nhịp nhàng, làn da sáng mịn, giảm mụn ẩn.<br>• <em>Can Du (D9) & Tỳ Du (D11):</em> Tỳ sinh huyết, Can tàng huyết. Khí huyết dồi dào và sơ tiết tốt giúp nuôi dưỡng da mặt hồng hào, hạn chế tình trạng nám sạm, khô xỉn do căng thẳng.<br>• <em>Thận Du (L2) & Mệnh Môn:</em> Thận Thủy là gốc của tiên thiên, nuôi dưỡng Can Mộc và làm mát Tâm Hỏa, giúp giấc ngủ sâu, giảm quầng thâm mắt và làm chậm quá trình lão hóa tự nhiên.',
+                    '<strong>3. Định hướng chăm sóc toàn diện:</strong> Việc kết hợp khơi thông kinh lạc cột sống bên trong với chăm sóc da dưỡng sinh lành tính bên ngoài chính là nền tảng bền vững cho sức khỏe và vẻ đẹp tự nhiên.'
                 ],
-                citation: 'Nguồn tham khảo: Cẩm nang vệ sinh phòng bệnh cột sống – CLB Tác Động Cột Sống HN.'
+                citation: 'Nguồn trích dẫn: Học thuyết Kinh Lạc & Ngũ Hành ứng dụng – Y sỹ YHCT Nguyễn Hải Bằng biên soạn.'
+            },
+            {
+                category: 'Chuyên Đề 07 • Phục Hồi Chức Năng Tại Nhà',
+                title: 'Phác đồ 5 bài tập phục hồi & kéo giãn cột sống cổ – thắt lưng chuẩn y khoa',
+                paragraphs: [
+                    '<strong>1. Bài tập Thu Cằm (Chin Tuck – Giảm tải cổ C1–C7):</strong> Ngồi thẳng lưng trên ghế, mắt nhìn ngang. Dùng hai ngón tay đặt nhẹ lên cằm, từ từ đẩy cằm lùi thẳng ra sau (tạo cảm giác gáy kéo dài lên trần nhà, không cúi gập đầu). Giữ 5 giây rồi thả lỏng. Thực hiện 10 lần/hiệp, ngày 2–3 hiệp.',
+                    '<strong>2. Bài tập Xoay & Khép Xương Bả Vai (Giải tỏa vùng D1–D7):</strong> Đứng hoặc ngồi thẳng, xoay hai vai theo vòng tròn từ trước ra sau, sau đó ép nhẹ hai xương bả vai lại gần nhau về phía cột sống ngực, giữ 5 giây. Giúp mở lồng ngực và giảm co cứng cơ thang, cơ trám.',
+                    '<strong>3. Tư thế Mèo – Bò (Cat-Cow – Tăng thẩm thấu đĩa đệm):</strong> Chống hai tay vuông góc dưới vai và hai gối vuông góc dưới hông trên thảm. Hít vào chậm rãi võng nhẹ thắt lưng, mở ngực nhìn lên; thở ra cuộn tròn lưng lên cao, cúi đầu nhìn về rốn. Thực hiện 10–12 nhịp chậm rãi.',
+                    '<strong>4. Tư thế Nhân Sư (Sphinx – Hỗ trợ đĩa đệm L4–L5):</strong> Nằm sấp trên thảm, chống hai khuỷu tay ngay dưới vai, cẳng tay áp sàn. Hít thở đều, nâng nhẹ phần ngực lên trong khi xương mu và hông vẫn áp sát sàn. Giữ 20–30 giây, lặp lại 3 lần.',
+                    '<strong>5. Kéo giãn cơ hình lê (Piriformis Stretch – Phòng đau thần kinh tọa):</strong> Nằm ngửa co hai gối, gác cổ chân phải lên đầu gối trái, hai tay luồn ôm lấy đùi trái kéo nhẹ về phía ngực cho đến khi thấy căng giãn dễ chịu ở vùng mông phải. Giữ 20 giây rồi đổi bên.'
+                ],
+                citation: 'Nguồn trích dẫn: Hướng dẫn tập luyện phục hồi chức năng cột sống – CLB Tác Động Cột Sống HN.'
+            },
+            {
+                category: 'Chuyên Đề 08 • Dưỡng Sinh Tứ Quý & Phòng Bệnh',
+                title: 'Bảo vệ cửa ngõ Đại Chùy (C7) – Mệnh Môn (L2) & Phép dưỡng sinh theo mùa',
+                paragraphs: [
+                    '<strong>1. Hai cửa ngõ dương khí cần giữ ấm quanh năm:</strong><br>• <em>Huyệt Đại Chùy (nằm ngay chỗ lõm dưới gai sau đốt sống cổ C7):</em> Là nơi hội tụ của tất cả các kinh dương ở tay và chân với Đốc Mạch. Khi đi đêm, đi mưa hoặc ngồi dưới luồng gió điều hòa thổi thẳng vào gáy, phong hàn rất dễ xâm nhập qua huyệt này gây cứng cổ gáy, đau đầu và cảm mạo.<br>• <em>Huyệt Mệnh Môn (nằm dưới gai sau đốt sống thắt lưng L2, đối diện rốn ra sau):</em> Là cửa ngõ của nguyên khí và Thận dương. Để hở vùng thắt lưng khi ngủ hoặc ngồi trên nền lạnh dễ gây đau lưng cấp, lạnh bụng và suy giảm dương khí.',
+                    '<strong>2. Tư thế sinh hoạt bảo vệ cột sống:</strong><br>• <em>Khi ngồi làm việc:</em> Giữ bàn chân chạm phẳng sàn nhà, lưng tựa nhẹ vào ghế, màn hình máy tính ngang tầm mắt; sau mỗi 45–60 phút nên đứng dậy đi lại và vươn vai 2 phút.<br>• <em>Khi nhấc vật nặng:</em> Tuyệt đối không cúi gập lưng thẳng chân để nhấc đồ; hãy ngồi xổm xuống, giữ thẳng lưng, ôm vật sát vào thân người rồi dùng lực cơ đùi đứng lên.',
+                    '<strong>3. Dinh dưỡng bổ Can Thận, mạnh gân cốt:</strong> Bổ sung thực phẩm giàu canxi tự nhiên, collagen, đỗ đen, vừng đen, hạt óc chó, rau xanh đậm; hạn chế đồ ăn quá lạnh, rượu bia và thức khuya sau 23 giờ (giờ của kinh Đởm và Can tàng huyết).'
+                ],
+                citation: 'Nguồn trích dẫn: Cẩm nang dưỡng sinh Y học cổ truyền – Y sỹ YHCT Nguyễn Hải Bằng.'
+            },
+            {
+                category: 'Chuyên Đề 09 • Hỏi Đáp Thực Tế Lâm Sàng',
+                title: 'Giải đáp 6 câu hỏi thường gặp của người bệnh khi tiếp cận Tác Động Cột Sống',
+                paragraphs: [
+                    '<strong>Câu 1: Một liệu trình Tác động cột sống thường kéo dài bao lâu?</strong><br>Tùy thuộc vào mức độ cấp tính hay mạn tính và khả năng đáp ứng của từng cơ địa. Thông thường, các trường hợp đau mỏi cơ năng cấp tính có thể cải thiện rõ sau 3–5 buổi; các trường hợp thoái hóa lâu năm, phồng/thoát vị đĩa đệm thường cần từ 10–15 buổi kết hợp tập luyện phục hồi tại nhà.',
+                    '<strong>Câu 2: Sau buổi đầu tiên thực hiện thủ thuật, tại sao có người thấy hơi ê mỏi nhẹ?</strong><br>Đây là phản ứng sinh lý bình thường (gọi là phản ứng giải tỏa cơ). Khi lớp cơ co cứng lâu ngày được làm mềm và tuần hoàn máu tại chỗ tăng cường lưu thông trở lại, vùng cơ đó có thể hơi ê nhẹ trong 12–24 giờ đầu, sau đó cơ thể sẽ nhẹ nhõm và linh hoạt hơn hẳn.',
+                    '<strong>Câu 3: Người đã có phim chụp thoát vị đĩa đệm hoặc gai cột sống có làm được không?</strong><br>Hoàn toàn áp dụng được với các trường hợp thoát vị đĩa đệm mức độ nhẹ đến vừa chưa có chỉ định phẫu thuật cấp cứu. Phương pháp không tác động vào "gai xương" mà giải tỏa lớp cơ co thắt xung quanh, giúp giảm chèn ép rễ thần kinh để người bệnh hết đau và sinh hoạt bình thường.',
+                    '<strong>Câu 4: Trước khi đến thăm khám trực tiếp cần chuẩn bị gì?</strong><br>Người bệnh nên mặc trang phục rộng rãi, mềm mại (áo cài khuy hoặc áo phông thoải mái để thuận tiện bộc lộ vùng lưng khi thăm khám), mang theo phim chụp X-quang, MRI hoặc đơn thuốc đang dùng (nếu có) và liên hệ trước qua Zalo <strong>0898 765 865</strong>.'
+                ],
+                citation: 'Nguồn trích dẫn: Tổng hợp giải đáp chuyên môn tại CLB Tác Động Cột Sống HN - YHCT Việt Nam.'
             }
         ];
 
@@ -1700,3 +1691,17 @@
     </script>
 </body>
 </html>
+```
+
+---
+
+### Giải Đáp Chi Tiết Về Việc Lưu Trữ (Bạn Không Cần Mua Thêm Ổ Nhớ Hay Ổ Cứng)
+
+1. **Tất cả chữ và tài liệu đều nằm gọn trong mã nguồn trang web:**
+   * Toàn bộ 9 chuyên đề y khoa dài, bảng tra cứu đốt sống và công cụ đánh giá triệu chứng đều được lưu trực tiếp bằng văn bản ngay trong tệp `index.html`.
+   * Dung lượng của toàn bộ văn bản đó chỉ khoảng **60 KB – 100 KB** (chưa bằng 1/10 một bức ảnh chụp bằng điện thoại).
+2. **Kho lưu trữ miễn phí của GitHub dư sức chứa hàng nghìn bài viết và hình ảnh:**
+   * Tài khoản GitHub miễn phí cho phép mỗi kho lưu trữ (Repository) chứa lên tới **1 GB – 5 GB** dữ liệu.
+   * Với 10 bức ảnh thực tế của bạn (khoảng 15–20 MB) cộng với hàng trăm bài viết chuyên sâu sau này, bạn **không bao giờ phải lo đầy bộ nhớ** và cũng **không cần thuê thêm ổ nhớ đám mây hay mua ổ cứng vật lý** nào để vận hành trang web này.
+3. **Cách mở rộng thêm bài viết về sau:**
+   * Bất cứ khi nào bạn muốn bổ sung thêm ca lâm sàng mới, hình ảnh học tập mới hoặc chuyên đề chăm sóc da dưỡng sinh mới, bạn chỉ cần tải thêm ảnh vào đúng thư mục đó trên GitHub và cập nhật nội dung vào tệp `index.html`.
